@@ -13,7 +13,8 @@
 <h1 class="font-weight-bold text-uppercase" class ="left">Banaba Tech, Co.LTD</h1>
 
 <div style="text-align: right" >
-    <a href="#">Home </a>
+
+    <a href="">Home </a>
     <a href="#">About </a>
     <a href="#">Services </a>
     <a href="#">Team </a>

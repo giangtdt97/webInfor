@@ -17,3 +17,4 @@ Route::get('/', function () {
 Route::get('/welcome', function () {
     return view('welcome');
 });
+Route::resources('home','HomeController');
