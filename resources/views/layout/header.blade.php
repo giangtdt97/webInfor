@@ -21,6 +21,10 @@
     <a href="contact">Contact </a>
     <a href="#">Get A Quotes </a>
 </div>
+<script>
+    function myFunction() {
 
+    }
+</script>
 </body>
 </html>
