@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="public/images/logo-header.png" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="cache-control" content="no-cache, no-store">
+   <!-- <meta http-equiv="cache-control" content="no-cache, no-store">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
 
     <link rel="stylesheet" href="public/css/open-iconic-bootstrap.min.css">
@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="public/css/flaticon.css">
     <link rel="stylesheet" href="public/css/icomoon.css">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/style.css">-->
 </head>
 <body>
 @include('layout.header')
