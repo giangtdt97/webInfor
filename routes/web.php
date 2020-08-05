@@ -16,8 +16,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('home','HomeController@index');
-Route::get('about','AboutController@index');
-Route::get('services','ServicesController@index');
-Route::get('team','TeamController@index');
-Route::get('contact','ContactController@index');
+Route::get('home','HomeController@index')->name('home');
+Route::get('about','AboutController@index')->name('about');
+Route::get('services','ServicesController@index')->name('services');
+Route::get('team','TeamController@index')->name('team');
+Route::get('contact','ContactController@index')->name('contact');
