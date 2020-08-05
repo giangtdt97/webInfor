@@ -16,7 +16,7 @@
                     </h1>
                     <p class="" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Your Technology Partner for Software Innovation and Market-leading Solutions! We provide end-to-end software, Web and mobile application development services.</p>
                     <!--            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#" class="btn btn-primary px-4 py-3">Get a Quote</a> <a href="#" class="btn btn-primary btn-outline-primary px-4 py-3">Our Portfolio</a></p>-->
-                    <img src="images/logo-white.png" style="width: 250px">
+                    <img src="{{asset('images/logo-white.png')}}" alt="#" style="width: 250px">
 
                 </div>
                 <div class="one-half align-self-md-end align-self-sm-center" style="margin-top:auto;">
@@ -25,10 +25,10 @@
                             <img src="public/images/dashboard_full_1.png" class="img-fluid img"alt="">
                         </div>-->
                         <div class="item">
-                            <img src="images/dashboard_full_2.png" class="img-fluid img"alt="">
+                            <img src="{{asset('images/dashboard_full_2.png')}}" class="img-fluid img"alt="">
                         </div>
                         <div class="item">
-                            <img src="images/dashboard_full_3.png" class="img-fluid img"alt="">
+                            <img src="{{asset('images/dashboard_full_3.png')}}" class="img-fluid img"alt="">
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
 
         <div class="container-wrap mt-5">
             <div class="row d-flex no-gutters">
-                <div class="col-md-6 img ftco-animate" style="background-image: url(images/programer.jpg);">
+                <div class="col-md-6 img ftco-animate" style="background-image: url({{asset('images/programer.jpg')}});">
                 </div>
                 <div class="col-md-6 d-flex">
                     <div class="services-wrap">
@@ -178,7 +178,7 @@
                     <div class="carousel-testimony owl-carousel ftco-owl">
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url(images/persons/vuong-phan.jpg)">
+                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/vuong-phan.jpg')}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -192,7 +192,7 @@
                         </div>
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url(images/persons/hai-van.jpg)">
+                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/hai-van.jpg')}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -206,7 +206,7 @@
                         </div>
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url(images/persons/tin-tran.jpg)">
+                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/tin-tran.jpg')}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -220,7 +220,7 @@
                         </div>
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url(images/persons/duyen-nguyen.jpg)">
+                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/duyen-nguyen.jpg')}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -233,7 +233,7 @@
                         </div>
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url(images/persons/trung-tran.jpg)">
+                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/trung-tran.jpg')}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>

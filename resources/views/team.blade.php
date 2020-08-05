@@ -1,6 +1,6 @@
 @extends('layout.master')
 @section('content')
-    <div class="hero-wrap hero-wrap-2" style="background-image: url(images/bg_2.jpg);" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap hero-wrap-2" style="background-image: url({{asset('images/bg_2.jpg')}});" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container-fluid">
             <div class="row no-gutters d-flex slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -23,7 +23,7 @@
             <div class="row">
                 <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
                     <div class="staff">
-                        <div class="img mb-4" style="background-image: url(images/persons/vuong-phan.jpg);"></div>
+                        <div class="img mb-4" style="background-image: url({{asset('images/persons/vuong-phan.jpg')}});"></div>
                         <div class="info text-center">
                             <h3><a href="teacher-single.html">Vuong Phan</a></h3>
                             <span class="position">Senior Advisor</span>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
                     <div class="staff">
-                        <div class="img mb-4" style="background-image: url(images/persons/hai-van.jpg);"></div>
+                        <div class="img mb-4" style="background-image: url({{asset('images/persons/hai-van.jpg')}});"></div>
                         <div class="info text-center">
                             <h3><a href="teacher-single.html">Hai Van</a></h3>
                             <span class="position">Senior Software Developer</span>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
                     <div class="staff">
-                        <div class="img mb-4" style="background-image: url(images/persons/tin-tran.jpg);"></div>
+                        <div class="img mb-4" style="background-image: url({{asset('images/persons/tin-tran.jpg')}});"></div>
                         <div class="info text-center">
                             <h3><a href="teacher-single.html">Tin Tran</a></h3>
                             <span class="position">Senior Software Developer</span>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
                     <div class="staff">
-                        <div class="img mb-4" style="background-image: url(images/persons/duyen-nguyen.jpg);"></div>
+                        <div class="img mb-4" style="background-image: url({{asset('images/persons/duyen-nguyen.jpg')}});"></div>
                         <div class="info text-center">
                             <h3><a href="teacher-single.html">Duyen Nguyen</a></h3>
                             <span class="position">Business Analyst Manager</span>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
                     <div class="staff">
-                        <div class="img mb-4" style="background-image: url(images/persons/trung-tran.jpg);"></div>
+                        <div class="img mb-4" style="background-image: url({{asset('images/persons/trung-tran.jpg')}});"></div>
                         <div class="info text-center">
                             <h3><a href="teacher-single.html">Trung Tran</a></h3>
                             <span class="position">Human Resource Manager</span>
