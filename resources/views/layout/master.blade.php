@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Banaba Tech - Software Outsourcing Company</title>
+    <!-- <title>Banaba Tech - Software Outsourcing Company</title>
     <link rel="shortcut icon" href="public/images/logo-header.png" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <!-- <meta http-equiv="cache-control" content="no-cache, no-store">
+   <meta http-equiv="cache-control" content="no-cache, no-store">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
 
     <link rel="stylesheet" href="public/css/open-iconic-bootstrap.min.css">
