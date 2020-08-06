@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Banaba Tech - Software Outsourcing Company</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -22,18 +21,18 @@
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
                     <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                     <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                    <li class="ftco-animate"><a href="https://www.google.com"><span class="icon-instagram"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
             </div>
             <div class="col-md-2">
                 <div class="ftco-footer-widget mb-4 ml-md-5">
                     <h2 class="ftco-heading-2">Quick Links</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="py-2 d-block">About</a></li>
+                        <li><a href="{{route('about')}}" class="py-2 d-block">About</a></li>
                         <li><a href="#" class="py-2 d-block">Features</a></li>
                         <li><a href="#" class="py-2 d-block">Projects</a></li>
                         <li><a href="#" class="py-2 d-block">Blog</a></li>
-                        <li><a href="#" class="py-2 d-block">Contact</a></li>
+                        <li><a href="{{route('contact')}}" class="py-2 d-block">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,8 +68,8 @@
                     <h2 class="ftco-heading-2">Contact Info</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            <li><span class="icon icon-map-marker"></span><span class="text">67 Nguyen Huu Canh St. Binh Thanh, HCMC, Vietnam</span></li>
-                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">+84 93 365 2114</span></a></li>
+                            <li><span class="icon icon-map-marker"></span><span class="text">{{setting('site.address')}}</span></li>
+                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">{{setting('site.phone')}}</span></a></li>
                             <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@banabatech.com</span></a></li>
                         </ul>
                     </div>
