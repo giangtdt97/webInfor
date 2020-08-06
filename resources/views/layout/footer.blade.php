@@ -22,7 +22,7 @@
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
                     <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                     <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                    <li class="ftco-animate"><a href="https://www.google.com"><span class="icon-instagram"></span></a></li>
                 </ul>
             </div>
             <div class="col-md-2">
