@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -15,9 +16,9 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
 
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="{{route('home')}} "class="nav-link">Home</a></li>
-                <li class="nav-item {{ (request()->is('about')) ? 'active' : '' }}" ><a href="{{route('about')}}" class="nav-link">About</a></li>
-                <li class="nav-item {{ (request()->is('services')) ? 'active' : '' }}"><a href="{{route('services')}}" class="nav-link">Services</a></li>
+                    <li class="nav-item {{(strpos(Route::currentRouteName(), 'home')===0) ? 'active' : ''}} "><a href="{{route('home')}} "class="nav-link">Home</a></li>
+                    <li class="nav-item {{ (request()->is('about')) ? 'active' : '' }}" ><a href="{{route('about')}}" class="nav-link">About</a></li>
+                <li class="nav-item  {{ (request()->is('services')) ? 'active' : '' }}"><a href="{{route('services')}}" class="nav-link">Services</a></li>
                 <!--	          <li class="nav-item"><a class="nav-link" href="">Work</a></li>-->
                 <li class="nav-item {{ (request()->is('team')) ? 'active' : '' }}"><a href="{{route('team')}}" class="nav-link">Team</a></li>
                 <!--	          <li class="nav-item"><a href="pricing" class="nav-link">Pricing</a></li>-->
@@ -30,5 +31,12 @@
     </div>
 
 </nav>
+<script>
+    $(document).ready(function() {
+
+        var pathname = window.location.pathname;
+        $('.nav > li > a[href="'+pathname+'"]').parent().addClass('active');
+    })
+</script>
 </body>
 </html>
