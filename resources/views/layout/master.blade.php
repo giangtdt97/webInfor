@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <title>Banaba Tech - Software Outsourcing Company</title>
-</head>
+
 <body>
 @include('layout.header')
 @include('layout.menu')

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Banaba Example</title>
+    <title>{{setting('site.title')}}</title>
     <link rel="shortcut icon" href="{{asset('images/logo-header.png')}}" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
