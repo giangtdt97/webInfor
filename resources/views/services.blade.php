@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-
+@foreach($services as $service)
     <section class="ftco-section ftco-services">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
@@ -25,7 +25,7 @@
                     <div class="media block-6 services d-block text-center">
                         <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-creativity"></span></div></div>
                         <div class="media-body p-2 mt-3">
-                            <h3 class="heading">{{setting('site.category1_title')}}</h3>
+                            <h3 class="heading">{{$service->service_name}}</h3>
                             <p>With Vietnam senior software developers, we provide a full range of software solutions for your business: Digitize Your Business, E-commerce, hopping, Banking, Payment, E-learning, Customer relationship management (CRM)... </p>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-
+        @endforeach
         <div class="container-wrap mt-5">
             <div class="row d-flex no-gutters">
                 <div class="col-md-6 img ftco-animate" style="background-image: url({{asset('images/programer.jpg')}});">
