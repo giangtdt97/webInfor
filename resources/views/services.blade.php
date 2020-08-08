@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-@foreach($services as $services)
+
     <section class="ftco-section ftco-services">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
@@ -20,6 +20,7 @@
                     <span class="subheading">We are an international outsourcing company with a competitive price. <br>We have software engineers top of Vietnam</span>
                 </div>
             </div>
+            @foreach($services as $services)
             <div class="row">
                 <div class="col-md-4 d-flex align-self-stretch ftco-animate">
                     <div class="media block-6 services d-block text-center">
@@ -30,7 +31,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+             <!--   <div class="col-md-4 d-flex align-self-stretch ftco-animate">
                     <div class="media block-6 services d-block text-center">
                         <div class="d-flex justify-content-center"><div class="icon"><span class="{{$services->services_icon}}"></span></div></div>
                         <div class="media-body p-2 mt-3">
@@ -49,7 +50,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
         @endforeach
         <div class="container-wrap mt-5">
