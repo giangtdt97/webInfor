@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Contracts\Session\Session;
 class HomeController extends Controller
 {
 
@@ -11,5 +11,11 @@ class HomeController extends Controller
     {
         return view(
             'index');
+    }
+    public function changeLanguage($language)
+    {
+        Session::put('website_language', $language);
+
+        return redirect()->back();
     }
 }
