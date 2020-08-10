@@ -17,47 +17,23 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-
                     <h2 class="mb-2">Our Services & Solutions</h2>
                     <span class="subheading">We are an international outsourcing company with a competitive price. <br>We have software engineers top of Vietnam</span>
                 </div>
             </div>
-            @foreach($services as $services)
-            <div class="row">
-                <!--<div class="col-md-4 d-flex align-self-stretch ftco-animate">-->
-                    <div class="d-flex justify-content-sm-end mb-4 ftco-animate">
-                    <div class="media block-6 services d-block text-center">
-                        <div class="d-flex justify-content-center"><div class="icon"><span class="{{$services->services_icon}}"></span></div></div>
-                        <div class="media-body p-2 mt-3">
-                            <h3 class="heading">{{$services->services_name}}</h3>
-                            <p>{{$services->services_content}}</p>
+            @foreach($services as $service)
+                <div class="row">
+                    <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                        <div class="media block-6 services d-block text-center">
+                            <div class="d-flex justify-content-center"><div class="icon"><span class="{{$service->services_icon}}"></span></div></div>
+                            <div class="media-body p-2 mt-3">
+                                <h3 class="heading">{{$service->services_name}}</h3>
+                                <p>{{$service->services_content}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-             <!--   <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block text-center">
-                        <div class="d-flex justify-content-center"><div class="icon"><span class="{{$services->services_icon}}"></span></div></div>
-                        <div class="media-body p-2 mt-3">
-                            <h3 class="heading">{{$services->services_name}}</h3>
-                            <p>{{$services->services_content}}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block text-center">
-                        <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-market"></span></div></div>
-                        <div class="media-body p-2 mt-3">
-                            <h3 class="heading">{{setting('site.category3_title')}}</h3>
-                            <p>We has been getting that job done for clients in an effiecient and cost-effective manner. Create usable and accessible web solutions with the best responsive appearance, Full-cycle, compliance with
-                                seo standards, high security... </p>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-        </div>
-        </div>
-    </section>
-        @endforeach
+            @endforeach
         </div>
         <div class="container-wrap mt-5">
             <div class="row d-flex no-gutters">
