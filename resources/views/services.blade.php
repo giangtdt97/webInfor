@@ -1,5 +1,6 @@
 @extends('layout.master')
 @section('content')
+
     <div class="hero-wrap hero-wrap-2" style="background-image: url({{asset('images/bg_2.jpg')}});" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container-fluid">
@@ -11,18 +12,20 @@
             </div>
         </div>
     </div>
-
+<section></section>
     <section class="ftco-section ftco-services">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center heading-section ftco-animate">
+
                     <h2 class="mb-2">Our Services & Solutions</h2>
                     <span class="subheading">We are an international outsourcing company with a competitive price. <br>We have software engineers top of Vietnam</span>
                 </div>
             </div>
             @foreach($services as $services)
             <div class="row">
-                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                <!--<div class="col-md-4 d-flex align-self-stretch ftco-animate">-->
+                    <div class="d-flex justify-content-sm-end mb-4 ftco-animate">
                     <div class="media block-6 services d-block text-center">
                         <div class="d-flex justify-content-center"><div class="icon"><span class="{{$services->services_icon}}"></span></div></div>
                         <div class="media-body p-2 mt-3">
@@ -52,7 +55,10 @@
                 </div>
             </div>-->
         </div>
+        </div>
+    </section>
         @endforeach
+        </div>
         <div class="container-wrap mt-5">
             <div class="row d-flex no-gutters">
                 <div class="col-md-6 img ftco-animate" style="background-image: url({{asset('images/programer.jpg')}});">
