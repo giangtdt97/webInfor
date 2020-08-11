@@ -24,15 +24,15 @@
 
                 <div class="row">
                     @foreach($services as $service)
-                    <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services d-block text-center">
+                        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                            <div class="media block-6 services d-block text-center">
                                 <div class="d-flex justify-content-center"><div class="icon"><span class="{{$service->services_icon}}"></span></div></div>
-                            <div class="media-body p-2 mt-3">
-                                <h3 class="heading">{{$service->services_name}}</h3>
-                                <p>{{$service->services_content}}</p>
+                                <div class="media-body p-2 mt-3">
+                                    <h3 class="heading">{{$service->services_name}}</h3>
+                                    <p>{{$service->services_content}}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     @endforeach
                 </div>
 

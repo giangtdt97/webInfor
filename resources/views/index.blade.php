@@ -55,34 +55,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block text-center">
-                        <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-creativity"></span></div></div>
-                        <div class="media-body p-2 mt-3">
-                            <h3 class="heading">IT Services & Solutions</h3>
-                            <p>With Vietnam senior software developers, we provide a full range of software solutions for your business: Digitize Your Business, E-commerce, hopping, Banking, Payment, E-learning, Customer relationship management (CRM)... </p>
+                @foreach($services as $service)
+                    <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                        <div class="media block-6 services d-block text-center">
+                            <div class="d-flex justify-content-center"><div class="icon"><span class="{{$service->services_icon}}"></span></div></div>
+                            <div class="media-body p-2 mt-3">
+                                <h3 class="heading">{{$service->services_name}}</h3>
+                                <p>{{$service->services_content}}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block text-center">
-                        <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-research"></span></div></div>
-                        <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Mobile App Development</h3>
-                            <p>We design and develop functional and interactive mobile apps, for both iOS and Android. Based on your requirements we build either native or hybrid applications using the latest technologies and suitable cost.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block text-center">
-                        <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-market"></span></div></div>
-                        <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Web & Software Development</h3>
-                            <p>We has been getting that job done for clients in an effiecient and cost-effective manner. Create usable and accessible web solutions with the best responsive appearance, Full-cycle, compliance with
-                                seo standards, high security... </p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
 

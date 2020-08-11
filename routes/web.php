@@ -17,6 +17,7 @@ Route::get('/index', function () {
     return view('welcome');
 });
 Route::get('','HomeController@index')->name('home');
+
 Route::get('about','AboutController@index')->name('about');
 Route::get('services','ServicesController@index')->name('services');
 Route::get('team','TeamController@index')->name('team');
