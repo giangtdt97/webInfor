@@ -16,15 +16,15 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
 
             <ul class="navbar-nav ml-auto">
-                    <li class="nav-item {{(strpos(Route::currentRouteName(), 'home')===0) ? 'active' : ''}} "><a href="{{route('home')}} "class="nav-link">Home</a></li>
-                    <li class="nav-item {{ (request()->is('about')) ? 'active' : '' }}" ><a href="{{route('about')}}" class="nav-link">About</a></li>
-                <li class="nav-item  {{ (request()->is('services')) ? 'active' : '' }}"><a href="{{route('services')}}" class="nav-link">Services</a></li>
+                    <li class="nav-item {{(strpos(Route::currentRouteName(), 'home')===0) ? 'active' : ''}} "><a href="{{route('home')}} "class="nav-link">{{trans('menu.home')}}</a></li>
+                    <li class="nav-item {{ (request()->is('about')) ? 'active' : '' }}" ><a href="{{route('about')}}" class="nav-link">{{trans('menu.about')}}</a></li>
+                <li class="nav-item  {{ (request()->is('services')) ? 'active' : '' }}"><a href="{{route('services')}}" class="nav-link">{{trans('menu.services')}}</a></li>
                 <!--	          <li class="nav-item"><a class="nav-link" href="">Work</a></li>-->
-                <li class="nav-item {{ (request()->is('team')) ? 'active' : '' }}"><a href="{{route('team')}}" class="nav-link">Team</a></li>
+                <li class="nav-item {{ (request()->is('team')) ? 'active' : '' }}"><a href="{{route('team')}}" class="nav-link">{{trans('menu.team')}}</a></li>
                 <!--	          <li class="nav-item"><a href="pricing" class="nav-link">Pricing</a></li>-->
                 <!--	          <li class="nav-item"><a href="blog" class="nav-link">Blog</a></li>-->
-                <li class="nav-item {{ (request()->is('contact')) ? 'active' : '' }}"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
-                <li class="nav-item cta"><a href="" class="nav-link" data-toggle="modal" data-target="#modalRequest"><span>Get a Quote</span></a></li>
+                <li class="nav-item {{ (request()->is('contact')) ? 'active' : '' }}"><a href="{{route('contact')}}" class="nav-link">{{trans('menu.contact')}}</a></li>
+                <li class="nav-item cta"><a href="" class="nav-link" data-toggle="modal" data-target="#modalRequest"><span>{{trans('menu.get a quotegit ')}}</span></a></li>
                 <!--<li class="nav-item dropdown-menu">Language
                     <select name="language" id="language">
                         <option><a href="{!! route('user.change-language', ['en']) !!}" class="dropdown-item">English</a></option>

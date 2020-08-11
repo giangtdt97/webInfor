@@ -170,7 +170,7 @@
       <workItem from="1596786165548" duration="4462000" />
       <workItem from="1596865320440" duration="639000" />
       <workItem from="1597031608291" duration="7333000" />
-      <workItem from="1597112279137" duration="4611000" />
+      <workItem from="1597112279137" duration="5594000" />
     </task>
     <servers />
   </component>
@@ -189,6 +189,9 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="429" y="246" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595312681566">
       <screen x="0" y="23" width="1440" height="826" />
@@ -198,14 +201,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1596787274346" />
-    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1597114554252">
+    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1597121314301">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1597114554252" />
+    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1597121314301" />
     <state x="277" y="77" key="SettingsEditor" timestamp="1597112289936">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1597112289936" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1597120859997">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1597120859997" />
     <state x="427" y="210" width="837" height="550" key="find.popup" timestamp="1595325636094">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
