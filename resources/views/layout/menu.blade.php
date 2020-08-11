@@ -25,6 +25,11 @@
                 <!--	          <li class="nav-item"><a href="blog" class="nav-link">Blog</a></li>-->
                 <li class="nav-item {{ (request()->is('contact')) ? 'active' : '' }}"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
                 <li class="nav-item cta"><a href="" class="nav-link" data-toggle="modal" data-target="#modalRequest"><span>Get a Quote</span></a></li>
+                <!--<li class="nav-item dropdown-menu">Language
+                    <select name="language" id="language">
+                        <option><a href="{!! route('user.change-language', ['en']) !!}" class="dropdown-item">English</a></option>
+                        <option><a href="{!! route('user.change-language', ['vi']) !!}" class="dropdown-item">Vietnam</a></option>
+                    </select></li>-->
             </ul>
 
         </div>

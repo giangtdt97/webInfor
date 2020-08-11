@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'locale' => 'en', //ngôn ngữ mặc định
+    'locale' => 'vi', //ngôn ngữ mặc định
     'fallback_locale' => 'en',
     /*
     |--------------------------------------------------------------------------
