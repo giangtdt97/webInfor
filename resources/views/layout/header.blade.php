@@ -29,8 +29,7 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 <body>
-<a href="{!! route('user.change-language', ['en']) !!}">English</a>
-<a href="{!! route('user.change-language', ['vi']) !!}">Vietnam</a>
+
 <!-- Modal -->
 <div class="modal fade" id="modalRequest" tabindex="-1" role="dialog" aria-labelledby="modalRequestLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
