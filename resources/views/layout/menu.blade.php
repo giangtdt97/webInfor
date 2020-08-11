@@ -13,10 +13,12 @@
             <span class="oi oi-menu"></span> Menu
         </button>
 
+
+
         <div class="collapse navbar-collapse" id="ftco-nav">
 
             <ul class="navbar-nav ml-auto">
-                    <li class="nav-item {{(strpos(Route::currentRouteName(), 'home')===0) ? 'active' : ''}} "><a href="{{route('home')}} "class="nav-link">{{trans('menu.home')}}</a></li>
+                <li class="nav-item {{(strpos(Route::currentRouteName(), 'home')===0) ? 'active' : ''}} "><a href="{{route('home')}} "class="nav-link">{{trans('menu.home')}}</a></li>
                     <li class="nav-item {{ (request()->is('about')) ? 'active' : '' }}" ><a href="{{route('about')}}" class="nav-link">{{trans('menu.about')}}</a></li>
                 <li class="nav-item  {{ (request()->is('services')) ? 'active' : '' }}"><a href="{{route('services')}}" class="nav-link">{{trans('menu.services')}}</a></li>
                 <!--	          <li class="nav-item"><a class="nav-link" href="">Work</a></li>-->
@@ -26,11 +28,9 @@
                 <li class="nav-item {{ (request()->is('contact')) ? 'active' : '' }}"><a href="{{route('contact')}}" class="nav-link">{{trans('menu.contact')}}</a></li>
                 <li class="nav-item cta"><a href="" class="nav-link" data-toggle="modal" data-target="#modalRequest"><span>{{trans('menu.get a quote')}}</span></a></li>
 
-                <li class="nav-item"><a href="{!! route('language', ['en']) !!}" class="nav-link">EN</a></li>
-                <li class="nav-item"><a href="{!! route('language', ['vi']) !!}" class="nav-link">VI</a></li>
-
+            <li class="nav-item" style="margin-right: auto"><a href="{!! route('language', ['en']) !!}" ><img  width="48px" height="24px" src="{{asset('images/flag.svg')}}"></a></li>
+            <li class="nav-item" style="margin-right: auto"><a href="{!! route('language', ['vi']) !!}" ><img width="48px" height="24px" src="{{asset('images/vietnam.svg')}}"></a></li>
             </ul>
-
         </div>
     </div>
 

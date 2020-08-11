@@ -9,11 +9,11 @@
                     <div class="row">
                         <div class="col-md-12 nav-link-wrap mb-5">
                             <div class="nav ftco-animate nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link" id="v-pills-whatwedo-tab" data-toggle="pill" href="#v-pills-whatwedo" role="tab" aria-controls="v-pills-whatwedo" aria-selected="true">What we do</a>
+                                <a class="nav-link" id="v-pills-whatwedo-tab" data-toggle="pill" href="#v-pills-whatwedo" role="tab" aria-controls="v-pills-whatwedo" aria-selected="true">{{trans('services.What we do')}}</a>
 
-                                <a class="nav-link" id="v-pills-mission-tab" data-toggle="pill" href="#v-pills-mission" role="tab" aria-controls="v-pills-mission" aria-selected="false">Our mission</a>
+                                <a class="nav-link" id="v-pills-mission-tab" data-toggle="pill" href="#v-pills-mission" role="tab" aria-controls="v-pills-mission" aria-selected="false">{{trans('services.Our mission')}}</a>
 
-                                <a class="nav-link" id="v-pills-goal-tab" data-toggle="pill" href="#v-pills-goal" role="tab" aria-controls="v-pills-goal" aria-selected="false">Our goal</a>
+                                <a class="nav-link" id="v-pills-goal-tab" data-toggle="pill" href="#v-pills-goal" role="tab" aria-controls="v-pills-goal" aria-selected="false">{{trans('services.Our goal')}}</a>
                             </div>
                         </div>
                         <div class="col-md-12 d-flex align-items-center">
@@ -22,25 +22,23 @@
 
                                 <div class="tab-pane show active" id="v-pills-whatwedo" role="tabpanel" aria-labelledby="v-pills-whatwedo-tab">
                                     <div>
-                                        <h2 class="mb-4">We Offer High Quality Services</h2>
-                                        <p>BANABA Tech Co., LTD is a Vietnam firm that specializes in software development and outsourcing especially in mobile APP (Android and IOS).&nbsp; The company has offered a wide range of high quality services in the development, delivery, and maintenance of software in Vietnam.</p>
-                                        <p>Our key advantage is the youth and dynamic developer team with extreme passion, and many experience in the local and international market. Moreover, we can make give a very competitive pricing strategy to deliver quality software solutions.</p>
-                                        <p>BANABA is always ready for helping you in any time you need.</p>
+                                        <h2 class="mb-4">{{trans('services.Offer')}}</h2>
+                                        <p>{{trans('services.content1')}}</p>
+                                        <p>{{trans('services.content2')}}</p>
+                                        <p>{{trans('services.content3')}}</p>
                                     </div>
                                 </div>
 
                                 <div class="tab-pane fade" id="v-pills-mission" role="tabpanel" aria-labelledby="v-pills-mission-tab">
                                     <div>
-                                        <p>
-                                            BANABA’s mission is to be a friend and cooperate with partners to realize the ideas for achieving their goals in all walks of life via using application software.
-                                        </p>
+                                        <p>{{trans('services.Mission')}}</p>
                                     </div>
                                 </div>
 
                                 <div class="tab-pane fade" id="v-pills-goal" role="tabpanel" aria-labelledby="v-pills-goal-tab">
                                     <div>
                                         <p>
-                                            Becoming one of the best company in the software producing and outsourcing in the world
+                                            {{trans('services.Goal')}}
                                         </p>
                                     </div>
                                 </div>

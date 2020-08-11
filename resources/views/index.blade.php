@@ -9,12 +9,12 @@
 
                 <div class="one-forth ftco-animate align-self-md-center" data-scrollax=" properties: { translateY: '70%' }">
                     <h1 class="mb-4">
-                        <strong class="typewrite" data-period="4000" data-type='[ "Digitize Your Business", "Mobile app (IOS &Android) outsourcing", "Offshore Software R&D", "Web & Graphic Design" ]'>
+                        <strong class="typewrite" data-period="4000" data-type='[ "{{trans('services.Digitize')}}", "{{trans('services.Mobile')}}", "{{trans('services.Offshore')}}", "{{trans('services.Web')}}" ]'>
 
                             <span class="wrap"></span>
                         </strong>
                     </h1>
-                    <p class="" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Your Technology Partner for Software Innovation and Market-leading Solutions! We provide end-to-end software, Web and mobile application development services.</p>
+                    <p class="" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{trans('services.advertise')}}</p>
                     <!--            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#" class="btn btn-primary px-4 py-3">Get a Quote</a> <a href="#" class="btn btn-primary btn-outline-primary px-4 py-3">Our Portfolio</a></p>-->
                     <img src="{{asset('images/logo-white.png')}}" alt="#" style="width: 250px">
 
@@ -41,7 +41,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 d-none d-sm-block">
-                    <h3 class="heading-white">Your IT Outsourcing partner!</h3>
+                    <h3 class="heading-white">{{trans('services.IT')}}!</h3>
                 </div>
             </div>
         </div>
@@ -50,22 +50,25 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2 class="mb-2">Our Services & Solutions</h2>
-                    <span class="subheading">We are an international outsourcing company with a competitive price. <br>We have software engineers top of Vietnam</span>
+                    <h2 class="mb-2">{{trans('services.Our')}}</h2>
+                    <span class="subheading">{{trans('services.We')}} <br>{{trans('services.Engineer')}}</span>
                 </div>
             </div>
             <div class="row">
-                @foreach($services as $service)
-                    <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services d-block text-center">
-                            <div class="d-flex justify-content-center"><div class="icon"><span class="{{$service->services_icon}}"></span></div></div>
-                            <div class="media-body p-2 mt-3">
-                                <h3 class="heading">{{$service->services_name}}</h3>
-                                <p>{{$service->services_content}}</p>
+                    @foreach($services as $service)
+                        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                            <div class="media block-6 services d-block text-center">
+                                <div class="d-flex justify-content-center"><div class="icon"><span class="{{$service->services_icon}}"></span></div></div>
+                                <div class="media-body p-2 mt-3">
+                                    <h3 class="heading">@if(App::isLocale('en')){{$service->services_name}}</h3>
+                                    <p>{{$service->services_content}}</p>
+                                    @else{{$service->services_name_vi}}</h3>
+                                    <p>{{$service->services_content_vi}}</p>
+                                    @endif
+                                </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
             </div>
         </div>
 
@@ -74,7 +77,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
-                        <h3 class="heading-white">An offshore software development is a great way for corporations to cut costs and reduce size effectively and dynamically.</h3>
+                        <h3 class="heading-white">{{trans('services.introduce')}}</h3>
                     </div>
                 </div>
             </div>
@@ -141,7 +144,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h3 class="heading-white">We provide end-to-end software, Web and mobile application development services.</h3>
+                    <h3 class="heading-white">{{trans('services.Provide')}}.</h3>
                 </div>
             </div>
         </div>
