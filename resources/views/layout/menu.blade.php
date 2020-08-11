@@ -27,10 +27,10 @@
                 <!--	          <li class="nav-item"><a href="blog" class="nav-link">Blog</a></li>-->
                 <li class="nav-item {{ (request()->is('contact')) ? 'active' : '' }}"><a href="{{route('contact')}}" class="nav-link">{{trans('menu.contact')}}</a></li>
                 <li class="nav-item cta"><a href="" class="nav-link" data-toggle="modal" data-target="#modalRequest"><span>{{trans('menu.get a quote')}}</span></a></li>
-
-            <li class="nav-item" style="margin-right: auto"><a href="{!! route('language', ['en']) !!}" ><img  width="48px" height="24px" src="{{asset('images/flag.svg')}}"></a></li>
-            <li class="nav-item" style="margin-right: auto"><a href="{!! route('language', ['vi']) !!}" ><img width="48px" height="24px" src="{{asset('images/vietnam.svg')}}"></a></li>
             </ul>
+            <div style="float: right"><a href="{!! route('language', ['en']) !!}" ><img  width="48px" height="24px" src="{{asset('images/flag.svg')}}"></a></div>
+                <div style="float: right">  <a href="{!! route('language', ['vi']) !!}" ><img width="48px" height="24px" src="{{asset('images/vietnam.svg')}}"></a>
+            </div>
         </div>
     </div>
 

@@ -17,8 +17,8 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2 class="mb-2">Our Services & Solutions</h2>
-                    <span class="subheading">We are an international outsourcing company with a competitive price. <br>We have software engineers top of Vietnam</span>
+                    <h2 class="mb-2">{{trans('services.Our')}}</h2>
+                    <span class="subheading">{{trans('services.We')}} <br>{{trans('services.Engineer')}}</span>
                 </div>
             </div>
 
