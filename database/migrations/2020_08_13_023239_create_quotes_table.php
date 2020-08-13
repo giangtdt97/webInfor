@@ -13,6 +13,7 @@ class CreateQuotesTable extends Migration
      */
     public function up()
     {
+
         Schema::create('quotes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
@@ -20,6 +21,7 @@ class CreateQuotesTable extends Migration
             $table->string('quote_content');
             $table->timestamps();
         });
+
     }
 
     /**

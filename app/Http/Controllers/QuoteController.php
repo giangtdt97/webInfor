@@ -14,21 +14,28 @@ class QuoteController extends Controller
      */
     public function index()
     {
-        //
+       return view('index');
     }
 
     public function create()
     {
-        //
+
     }
 
     public function store(Request $request)
     {
-        $quote = new Quote();
-        $quote->name = $request->name;
-        $quote->email = $request->email;
-        $quote->quote_content = $request->quote_content;
-        $quote->save();
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'quote_content' => 'required',
+        ]);
+
+//        dd($request);
+        $quotes = new Quote();
+        $quotes->name = $request->input('name');
+        $quotes->email = $request->input('email');
+        $quotes->quote_content = $request->input('quote_content');
+        $quotes->save();
         return redirect()->route('home');
     }
 

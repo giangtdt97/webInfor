@@ -17,6 +17,8 @@ class CreateServicesTable extends Migration
             $table->increments('id');
             $table->string('services_name');
             $table->string('services_content');
+            $table->string('services_name_vi');
+            $table->string('services_content_vi');
             $table->string('services_icon');
             $table->timestamps();
         });

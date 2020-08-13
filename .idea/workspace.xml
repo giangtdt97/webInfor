@@ -7,7 +7,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3de9e3-bbc6-471f-a990-23029ed1b561" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/SettingsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SettingsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuoteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Quote.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Quote.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_074518_create_services_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_074518_create_services_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_13_023239_create_quotes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_13_023239_create_quotes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/QuoteTableSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -178,7 +183,7 @@
       <workItem from="1597218480475" duration="334000" />
       <workItem from="1597219763080" duration="154000" />
       <workItem from="1597220117596" duration="2354000" />
-      <workItem from="1597285774874" duration="3298000" />
+      <workItem from="1597285774874" duration="16469000" />
     </task>
     <servers />
   </component>
@@ -205,6 +210,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="429" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.826@0.23.1440.826" timestamp="1595312681566" />
+    <state x="550" y="61" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597301877856">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="550" y="61" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1597301877856" />
     <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597131378440">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

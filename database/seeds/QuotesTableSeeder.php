@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class QuoteTableSeeder extends Seeder
+class QuotesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,14 +11,13 @@ class QuoteTableSeeder extends Seeder
      */
     public function run()
     {
-
         $faker = Faker\Factory::create();
-        for ($i = 0; $i < 5; $i++) {
-            DB::table('quote')->insert([
+     //   for ($i = 0; $i < 5; $i++) {
+            DB::table('quotes')->insert([
                 'name' => $faker->name(),
                 'email' => $faker->safeEmail,
-                'quote_content' =>'content'
+                'quote_content' =>'request',
             ]);
         }
-    }
+  //  }
 }
