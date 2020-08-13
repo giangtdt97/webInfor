@@ -57,7 +57,28 @@ class SettingsTableSeeder extends Seeder
                 'group'        => 'Site',
             ])->save();
         }
-
+        $setting = $this->findSetting('site.address');
+        if (!$setting->exists) {
+            $setting->fill([
+                'display_name' => 'Site Address',
+                'value' => '67 Nguyen Huu Canh St. Binh Thanh, HCMC, Vietnam',
+                'details' => '',
+                'type' => 'text',
+                'order' => 1,
+                'group' => 'Site',
+            ])->save();
+        }
+        $setting = $this->findSetting('site.phone');
+        if (!$setting->exists) {
+            $setting->fill([
+                'display_name' => 'Site Phone',
+                'value' => '+84 93 365 2114',
+                'details' => '',
+                'type' => 'text',
+                'order' => 1,
+                'group' => 'Site',
+            ])->save();
+        }
         $setting = $this->findSetting('admin.bg_image');
         if (!$setting->exists) {
             $setting->fill([

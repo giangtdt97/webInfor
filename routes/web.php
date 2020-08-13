@@ -22,6 +22,7 @@ Route::get('about','AboutController@index')->name('about');
 Route::get('services','ServicesController@index')->name('services');
 Route::get('team','TeamController@index')->name('team');
 Route::get('contact','ContactController@index')->name('contact');
+
 Route::get('change-language/{language}', 'HomeController@changeLanguage')->name('user.change-language');
 Route::group(['middleware' => 'locale'], function() {
     Route::get('language/{language}', 'HomeController@changeLanguage')
