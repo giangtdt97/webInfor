@@ -24,7 +24,7 @@ class QuoteController extends Controller
 
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
+        $this->validate($request,[
             'name' => 'required',
             'email' => 'required',
             'quote_content' => 'required',
@@ -36,7 +36,7 @@ class QuoteController extends Controller
         $quotes->email = $request->input('email');
         $quotes->quote_content = $request->input('quote_content');
         $quotes->save();
-        return redirect()->route('home');
+        return redirect('')->with('success','Request is sent');
     }
 
 }

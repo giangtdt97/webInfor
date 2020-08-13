@@ -29,9 +29,9 @@
                                 <div class="d-flex justify-content-center"><div class="icon"><span class="{{$service->services_icon}}"></span></div></div>
                                 <div class="media-body p-2 mt-3">
                                     <h3 class="heading">@if(App::isLocale('en')){{$service->services_name}}</h3>
-                                    <p>{{$service->services_content}}</p>
-                                    @else{{$service->services_name_vi}}</h3>
-                                    <p>{{$service->services_content_vi}}</p>
+                                    {{$service->services_content}}
+                                    @else{{$service->services_name_vi}}
+                                    {{$service->services_content_vi}}
                                     @endif
                                 </div>
                             </div>

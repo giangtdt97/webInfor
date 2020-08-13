@@ -8,13 +8,11 @@
     <list default="true" id="5b3de9e3-bbc6-471f-a990-23029ed1b561" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuoteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Quote.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Quote.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_074518_create_services_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_074518_create_services_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_13_023239_create_quotes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_13_023239_create_quotes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/QuoteTableSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/services.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +181,7 @@
       <workItem from="1597218480475" duration="334000" />
       <workItem from="1597219763080" duration="154000" />
       <workItem from="1597220117596" duration="2354000" />
-      <workItem from="1597285774874" duration="16469000" />
+      <workItem from="1597285774874" duration="20520000" />
     </task>
     <servers />
   </component>

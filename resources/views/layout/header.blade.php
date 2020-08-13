@@ -43,9 +43,9 @@
 
             <div class="modal-body">
 
-                <form method="post" id="addform" action="{{route('quote')}}">
+                <form method="post" id="addModal" action="{{route('quote')}}">
                     @if ($errors->any())
-                        <div class="alert alert-danger">
+                        <div class="alert alert-danger" >
                             <ul>
                                 @foreach ($errors->all() as $error)
                                     <li>{{ $error }}</li>
@@ -81,6 +81,23 @@
 </div>
 
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+            </div>
+            <div class="modal-body">
+                <p>Request is sent!!!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
