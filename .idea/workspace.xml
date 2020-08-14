@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3de9e3-bbc6-471f-a990-23029ed1b561" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ServicesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ServicesTableSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +137,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../UIEmail" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/public/images/vietnam.svg" />
@@ -177,7 +176,7 @@
       <workItem from="1597219763080" duration="154000" />
       <workItem from="1597220117596" duration="2354000" />
       <workItem from="1597285774874" duration="21074000" />
-      <workItem from="1597373515087" duration="1417000" />
+      <workItem from="1597373515087" duration="1914000" />
     </task>
     <servers />
   </component>
@@ -216,10 +215,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1597139796676" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1597218818199">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1597375429962">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1597218818199" />
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1597375429962" />
     <state x="604" y="356" key="NewPhpFileDialog" timestamp="1597128592394">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
