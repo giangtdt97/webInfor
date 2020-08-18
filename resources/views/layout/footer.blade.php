@@ -53,7 +53,7 @@
                     <div class="block-21 mb-4 d-flex">
                         <a class="blog-img mr-4" style="background-image: url({{asset('images/image_2.jpg')}});"></a>
                         <div class="text">
-                            <h3 class="heading"><a href="#">2nd Place in Vietnam Mobile Application Creation Contest by Huawei Technologies Co., Ltd</a></h3>
+                            <h3 class="heading"><a href="#">{{trans('index.award')}}</a></h3>
                             <div class="meta">
                                 <div><a href="#"><span class="icon-calendar"></span>November 15, 2015</a></div>
                                 <div><a href="#"><span class="icon-person"></span> Admin</a></div>
