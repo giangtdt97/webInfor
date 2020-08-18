@@ -16,7 +16,7 @@
             <div class="col-md-3">
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Banaba Tech.</h2>
-                    <p>An offshore software development is a great way for corporations to cut costs and reduce size effectively and dynamically! We have experienced software developers in Vietnam</p>
+                    <p>{{trans('services.introduce01')}}{{trans('services.introduce02')}}</p>
                 </div>
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
                     <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>

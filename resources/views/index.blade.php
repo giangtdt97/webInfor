@@ -14,7 +14,7 @@
                             <span class="wrap"></span>
                         </strong>
                     </h1>
-                    <p class="" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{trans('services.advertise')}}</p>
+                    <p class="" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{trans('services.advertise01')}}</p>
                     <!--            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#" class="btn btn-primary px-4 py-3">Get a Quote</a> <a href="#" class="btn btn-primary btn-outline-primary px-4 py-3">Our Portfolio</a></p>-->
                     <img src="{{asset('images/logo-white.png')}}" alt="#" style="width: 250px">
 
@@ -61,9 +61,9 @@
                                 <div class="d-flex justify-content-center"><div class="icon"><span class="{{$service->services_icon}}"></span></div></div>
                                 <div class="media-body p-2 mt-3">
                                     <h3 class="heading">@if(App::isLocale('en')){{$service->services_name}}</h3>
-                                    {{$service->services_content}}
-                                    @else{{$service->services_name_vi}}</h3>
-                                    {{$service->services_content_vi}}
+                                   <p>{{$service->services_content}}</p>
+                                    @else<h3>{{$service->services_name_vi}}</h3>
+                                    <p>{{$service->services_content_vi}}</p>
                                     @endif
                                 </div>
                             </div>
@@ -77,7 +77,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
-                        <h3 class="heading-white">{{trans('services.introduce')}}</h3>
+                        <h3 class="heading-white">{{trans('services.introduce01')}}</h3>
                     </div>
                 </div>
             </div>
@@ -90,8 +90,8 @@
                 <div class="col-md-6 d-flex">
                     <div class="services-wrap">
                         <div class="heading-section mb-5 ftco-animate">
-                            <h2 class="mb-2">Our technologies</h2>
-                            <span class="subheading">We have experienced software engineers in Vietnam</span>
+                            <h2 class="mb-2">{{trans('services.technologies')}}</h2>
+                            <span class="subheading">{{trans('services.introduce02')}}</span>
                         </div>
                         <div class="list-services d-flex ftco-animate">
                             <div class="icon d-flex justify-content-center align-items-center">
@@ -155,8 +155,8 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2 class="mb-2">About Us</h2>
-                    <span class="subheading">We value our team as an important asset in the software development business.</span>
+                    <h2 class="mb-2">{{trans('services.about us')}}</h2>
+                    <span class="subheading">{{trans('services.aboutusdetail')}}</span>
                 </div>
             </div>
             <div class="row justify-content-center ftco-animate">
@@ -240,20 +240,20 @@
             <div class="row">
                 <div class="col-md-6 pr-md-5 aside-stretch py-5 choose">
                     <div class="heading-section heading-section-white mb-5 ftco-animate">
-                        <h2 class="mb-2">Offshore Software Development</h2>
+                        <h2 class="mb-2">{{trans('index.development')}}</h2>
                     </div>
                     <div class="ftco-animate">
-                        <p>Our offshore software development models consist of the dedicated team of programmers and developers who have been handpicked to complement each customer’s skill set and culture.</p>
+                        <p>{{trans('index.offshore')}}</p>
                         <ul class="un-styled my-5">
-                            <li><span class="icon-check"></span>Offshore full-time dedicated development team model.</li>
-                            <li><span class="icon-check"></span>with a wide-ranging set of technology capabilities to build solutions your business needs.</li>
-                            <li><span class="icon-check"></span>An offshore software development is a great way for corporations to cut costs and reduce size effectively and dynamically.</li>
+                            <li><span class="icon-check"></span>{{trans('index.dedicated')}}</li>
+                            <li><span class="icon-check"></span>{{trans('index.solutions')}}</li>
+                            <li><span class="icon-check"></span>{{trans('services.introduce01')}}</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 py-5 pl-md-5">
                     <div class="heading-section mb-5 ftco-animate">
-                        <h2 class="mb-2">Get a Free Quote</h2>
+                        <h2 class="mb-2">{{trans('menu.get a quote')}}</h2>
                     </div>
                     <form action="#" class="ftco-animate">
                         <div class="row">

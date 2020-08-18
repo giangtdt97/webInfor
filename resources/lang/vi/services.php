@@ -1,7 +1,7 @@
 <?php
 return[
-    'introduce'=>'Phát triển phần mềm ra nước ngoài là một cách tuyệt vời để các tập đoàn cắt giảm chi phí và giảm quy mô một cách hiệu quả và năng động.',
-    'advertise'=>'Đối tác công nghệ của bạn cho các giải pháp đổi mới phần mềm và dẫn đầu thị trường! Chúng tôi cung cấp phần mềm end-to-end, dịch vụ phát triển ứng dụng web và di động ',
+    'introduce01'=>'Phát triển phần mềm ra nước ngoài là một cách tuyệt vời để các tập đoàn cắt giảm chi phí và giảm quy mô một cách hiệu quả và năng động.',
+    'advertise01'=>'Đối tác công nghệ của bạn cho các giải pháp đổi mới phần mềm và dẫn đầu thị trường! Chúng tôi cung cấp phần mềm end-to-end, dịch vụ phát triển ứng dụng web và di động ',
     'Digitize'=>'Số hóa doanh nghiệp của bạn',
     'Mobile'=>'Gia công ứng dụng di động (IOS và Android)',
     'Offshore'=>'R&D Phần mềm Nước ngoài',
@@ -20,5 +20,13 @@ return[
     'content1'=>'BANABA Tech Co., LTD là công ty Việt Nam chuyên về phát triển và gia công phần mềm, đặc biệt là trong ứng dụng di động (Android và IOS). & Nbsp; Công ty đã cung cấp một loạt các dịch vụ chất lượng cao trong việc phát triển, phân phối và bảo trì phần mềm tại Việt Nam.',
     'content2'=>'Lợi thế chính của chúng tôi là đội ngũ lập trình viên trẻ và năng động, có niềm đam mê mãnh liệt và nhiều kinh nghiệm trong thị trường trong nước và quốc tế. Hơn nữa, chúng tôi có thể đưa ra một chiến lược giá rất cạnh tranh để cung cấp các giải pháp phần mềm chất lượng.',
     'content3'=>'BANABA luôn sẵn sàng giúp đỡ bạn bất cứ lúc nào bạn cần.',
+    'Our Blog'=>'Blog của chúng tôi',
+    'Contact Information'=>'Thông tin liên lạc',
+    'advertise03'=>'Các mô hình tương tác linh hoạt của chúng tôi rất hữu ích để tiết kiệm chi phí: nhóm chuyên trách ở nước ngoài, BOT, giá theo giờ, giá hàng tháng, mô hình kết hợp ...',
+    'about us'=>'Về chúng tôi',
+    'aboutusdetail'=>'Chúng tôi đánh giá đội ngũ của mình như một tài sản quan trọng trong kinh doanh phát triển phần mềm.',
+    'introduce02'=>'Chúng tôi có các nhà phát triển phần mềm giàu kinh nghiệm tại Việt Nam.',
+    'technologies'=>'Công nghệ',
+
     ];
 ?>

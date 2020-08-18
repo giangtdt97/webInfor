@@ -16,7 +16,7 @@ class ServicesTableSeeder extends Seeder
             'services_name' => 'IT Services & Solutions',
             'services_content' =>'With Vietnam senior software developers, we provide a full range of software solutions for your business: Digitize Your Business, E-commerce, hopping, Banking, Payment, E-learning, Customer relationship management (CRM)...',
             'services_name_vi'=>'Dịch vụ & Giải pháp CNTT',
-            'services_content_vi'=>'Với các nhà phát triển phần mềm cao cấp của Việt Nam, chúng tôi cung cấp đầy đủ các giải pháp phần mềm cho doanh nghiệp của bạn: Số hóa Doanh nghiệp của Bạn, Thương mại điện tử, Hopping, Ngân hàng, Thanh toán, Học tập điện tử, Quản lý quan hệ khách hàng (CRM) ...',
+            'services_content_vi'=>'Với các nhà phát triển phần mềm nhiều kinh nghiệm của Việt Nam, chúng tôi cung cấp đầy đủ các giải pháp phần mềm cho doanh nghiệp của bạn: Số hóa Doanh nghiệp của Bạn, Thương mại điện tử, Hopping, Ngân hàng, Thanh toán, Học tập điện tử, Quản lý quan hệ khách hàng (CRM) ...',
             'services_icon' => 'flaticon-creativity',
 
         ]);

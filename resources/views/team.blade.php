@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center heading-sTection ftco-animate">
-                    <h2 class="mb-3">The founders</h2>
+                    <h2 class="mb-3">The Founders</h2>
                     <!--            <span class="subheading">Our Expert &amp; Well Experience Staff</span>-->
                 </div>
             </div>

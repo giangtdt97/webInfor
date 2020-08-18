@@ -1,7 +1,7 @@
 <?php
 return[
-    'introduce'=>'An offshore software development is a great way for corporations to cut costs and reduce size effectively and dynamically.',
-    'advertise'=>'Your Technology Partner for Software Innovation and Market-leading Solutions! We provide end-to-end software, Web and mobile application development services',
+    'introduce01'=>'An offshore software development is a great way for corporations to cut costs and reduce size effectively and dynamically!',
+    'advertise01'=>'Your Technology Partner for Software Innovation and Market-leading Solutions! We provide end-to-end software, Web and mobile application development services',
     'Digitize'=>'Digitize Your Business',
     'Mobile'=>'Mobile app (IOS &Android) outsourcing',
     'Offshore'=>'Offshore Software R&D',
@@ -20,5 +20,13 @@ return[
     'content1'=>'BANABA Tech Co., LTD is a Vietnam firm that specializes in software development and outsourcing especially in mobile APP (Android and IOS).&nbsp; The company has offered a wide range of high quality services in the development, delivery, and maintenance of software in Vietnam.',
     'content2'=>'Our key advantage is the youth and dynamic developer team with extreme passion, and many experience in the local and international market. Moreover, we can make give a very competitive pricing strategy to deliver quality software solutions.',
     'content3'=>'BANABA is always ready for helping you in any time you need.',
+    'Our Blog'=>'Our Blog',
+    'Contact Information'=>'Contact Information',
+    'advertise03'=>'Our flexible engagement models are helpful to save your cost: offshore dedicated team, BOT, hourly rate, monthly rate, hybrid model...',
+    'about us'=>'About Us',
+    'aboutusdetail'=>'We value our team as an important asset in the software development business.',
+    'introduce02'=>'We have experienced software developers in Vietnam.',
+    'technologies'=>'Our technologies'
+
 ];
 ?>

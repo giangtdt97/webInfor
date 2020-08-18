@@ -55,8 +55,8 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2 class="mb-2">About Us</h2>
-                    <span class="subheading">We value our team as an important asset in the software development business.</span>
+                    <h2 class="mb-2">{{trans('services.about us')}}</h2>
+                    <span class="subheading">{{trans('services.aboutusdetail')}}</span>
                 </div>
             </div>
             <div class="row justify-content-center ftco-animate">

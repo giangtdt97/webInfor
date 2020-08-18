@@ -6,7 +6,7 @@
             <div class="row no-gutters d-flex slider-text align-items-center justify-content-center" data-scrollax-parent="true">
                 <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
                     <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="{{route('home')}}">Home</a></span> <span>Blog</span></p>
-                    <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Our Blog</h1>
+                    <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{trans('services.Our Blog')}}</h1>
                 </div>
             </div>
         </div>
@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row d-flex mb-5 contact-info">
                 <div class="col-md-12 mb-4">
-                    <h2 class="h4">Contact Information</h2>
+                    <h2 class="h4">{{trans('services.Contact Information')}}</h2>
                 </div>
                 <div class="w-100"></div>
                 <div class="col-md-3">
@@ -66,7 +66,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h3 class="heading-white">Our flexible engagement models are helpful to save your cost: offshore dedicated team, BOT, hourly rate, monthly rate, hybrid model...</h3>
+                    <h3 class="heading-white">{{trans('services.advertise03')}}</h3>
                 </div>
             </div>
         </div>

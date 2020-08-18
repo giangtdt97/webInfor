@@ -29,9 +29,9 @@
                                 <div class="d-flex justify-content-center"><div class="icon"><span class="{{$service->services_icon}}"></span></div></div>
                                 <div class="media-body p-2 mt-3">
                                     <h3 class="heading">@if(App::isLocale('en')){{$service->services_name}}</h3>
-                                    {{$service->services_content}}
-                                    @else{{$service->services_name_vi}}
-                                    {{$service->services_content_vi}}
+                                    <p>{{$service->services_content}}</p>
+                                    @else{{$service->services_name_vi}}<br/>
+                                    <p>{{$service->services_content_vi}}</p>
                                     @endif
                                 </div>
                             </div>
@@ -47,8 +47,8 @@
                 <div class="col-md-6 d-flex">
                     <div class="services-wrap">
                         <div class="heading-section mb-5 ftco-animate">
-                            <h2 class="mb-2">Our technologies</h2>
-                            <span class="subheading">We have experienced software engineers in Vietnam</span>
+                            <h2 class="mb-2">{{trans('services.technologies')}}</h2>
+                            <span class="subheading">{{trans('services.introduce02')}}</span>
                         </div>
                         <div class="list-services d-flex ftco-animate">
                             <div class="icon d-flex justify-content-center align-items-center">
@@ -101,7 +101,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h3 class="heading-white">Our flexible engagement models are helpful to save your cost: offshore dedicated team, BOT, hourly rate, monthly rate, hybrid model...</h3>
+                    <h3 class="heading-white">{{trans('services.advertise03')}}</h3>
                 </div>
             </div>
         </div>
