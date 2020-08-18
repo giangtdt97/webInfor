@@ -1,12 +1,12 @@
 <?php
 return[
-    'introduce01'=>'Phát triển phần mềm ra nước ngoài là một cách tuyệt vời để các tập đoàn cắt giảm chi phí và giảm quy mô một cách hiệu quả và năng động.',
-    'advertise01'=>'Đối tác công nghệ của bạn cho các giải pháp đổi mới phần mềm và dẫn đầu thị trường! Chúng tôi cung cấp phần mềm end-to-end, dịch vụ phát triển ứng dụng web và di động ',
-    'Digitize'=>'Số hóa doanh nghiệp của bạn',
+    'introduce01'=>'Phát triển phần mềm từ bên ngoài là một cách tuyệt vời để các tập đoàn cắt giảm chi phí và giảm quy mô một cách hiệu quả và năng động.',
+    'advertise01'=>'Đối tác Công Nghệ cho các cải tiến phần mềm và  giải pháp  dẫn đầu thị trường! Chúng tôi cung cấp phần mềm end-to-end, dịch vụ phát triển ứng dụng web và di động ',
+    'Digitize'=>'Số hóa ý tưởng kinh doanh',
     'Mobile'=>'Gia công ứng dụng di động (IOS và Android)',
     'Offshore'=>'R&D Phần mềm Nước ngoài',
     'Web'=>'Thiết kế web & đồ họa',
-    'IT'=>'Đối tác Gia công phần mềm CNTT của bạn',
+    'IT'=>'Đối tác Outsource phần mềm của bạn',
     'Our'=>'Dịch vụ & Giải pháp của chúng tôi',
     'We'=>'Banaba Tech là một công ty gia công phần mềm quốc tế với giá cả cạnh tranh.',
     'Engineer'=>'Chúng tôi có những kỹ sư phần mềm hàng đầu Việt Nam',
@@ -25,7 +25,7 @@ return[
     'advertise03'=>'Các mô hình tương tác linh hoạt của chúng tôi rất hữu ích để tiết kiệm chi phí: nhóm chuyên trách ở nước ngoài, BOT, giá theo giờ, giá hàng tháng, mô hình kết hợp ...',
     'about us'=>'Về chúng tôi',
     'aboutusdetail'=>'Chúng tôi đánh giá đội ngũ của mình như một tài sản quan trọng trong kinh doanh phát triển phần mềm.',
-    'introduce02'=>'Chúng tôi có các nhà phát triển phần mềm giàu kinh nghiệm tại Việt Nam.',
+    'introduce02'=>'Chúng tôi có các chuyên gia phần mềm giàu kinh nghiệm tại Việt Nam.',
     'technologies'=>'Công nghệ',
 
     ];
