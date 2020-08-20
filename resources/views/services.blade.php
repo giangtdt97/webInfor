@@ -29,7 +29,7 @@
                                 <div class="media-body p-2 mt-3">
                                     <h3 class="heading">@if(App::isLocale('en')){{$service->services_name}}</h3>
                                     <p>{{$service->services_content}}</p>
-                                    @else{{$service->services_name_vi}}<br/>
+                                    @else {{$service->services_name_vi}}
                                     <p>{{$service->services_content_vi}}</p>
                                     @endif
                                 </div>
@@ -37,7 +37,6 @@
                         </div>
                     @endforeach
                 </div>
-
         </div>
         <div class="container-wrap mt-5">
             <div class="row d-flex no-gutters">
