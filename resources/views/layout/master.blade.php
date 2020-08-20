@@ -33,11 +33,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-@include('layout.header')
-@include('layout.menu')
-<hr>
-@section('content') @show
-<hr>
-@include('layout.footer')
+@include('shared._header')
+@include('shared._menu')
+<hr/>
+@yield('content')
+<hr/>
+@include('shared._footer')
 </body>
 </html>
