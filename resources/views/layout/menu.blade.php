@@ -4,13 +4,10 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
         </button>
-
-
-
         <div class="collapse navbar-collapse" id="ftco-nav">
 
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item {{(strpos(Route::currentRouteName(), 'home')===0) ? 'active' : ''}} "><a href="{{route('home')}} "class="nav-link">{{trans('menu.home')}}</a></li>
+                <li class="nav-item {{(strpos(Route::currentRouteName(), 'home')===0) ? 'active' : ''}} "><a href="{{route('home')}}" class="nav-link">{{trans('menu.home')}}</a></li>
                     <li class="nav-item {{ (request()->is('about')) ? 'active' : '' }}" ><a href="{{route('about')}}" class="nav-link">{{trans('menu.about')}}</a></li>
                 <li class="nav-item  {{ (request()->is('services')) ? 'active' : '' }}"><a href="{{route('services')}}" class="nav-link">{{trans('menu.services')}}</a></li>
                 <!--	          <li class="nav-item"><a class="nav-link" href="">Work</a></li>-->
