@@ -1,11 +1,3 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
         <a class="navbar-brand" href="{{route('home')}}">Banaba Tech Co., Ltd.</a>
@@ -42,5 +34,4 @@
         $('.nav > li > a[href="'+pathname+'"]').parent().addClass('active');
     })
 </script>
-</body>
-</html>
+

@@ -1,7 +1,5 @@
 @extends('layout.master')
 @section('content')
-    <html>
-    <body>
     <div class="hero-wrap">
         <div class="overlay"></div>
         <div class="container-fluid">
@@ -293,7 +291,4 @@
             </div>
         </div>
     </section>
-
-    </body>
-    </html>
 @endsection
