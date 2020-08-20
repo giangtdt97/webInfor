@@ -4,7 +4,7 @@ return[
     'development'=>'Offshore Software Development',
     'dedicated'=>'Offshore full-time dedicated development team model.',
     'solutions'=>'with a wide-ranging set of technology capabilities to build solutions your business needs.',
-    'arward'=>'2nd Place in Vietnam Mobile Application Creation Contest by Huawei Technologies Co., Ltd'
+    'award'=>'2nd Place in Vietnam Mobile Application Creation Contest by Huawei Technologies Co., Ltd'
 
 ];
 ?>
