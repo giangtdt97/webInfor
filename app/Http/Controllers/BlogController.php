@@ -18,7 +18,7 @@ class BlogController extends Controller
         $blog = Blog::where('slug', $slug)->first();
         // dd($blog);
         return view(
-            'blog_single',
+            'blog-single',
             ['blog' => $blog]
         );
     }
