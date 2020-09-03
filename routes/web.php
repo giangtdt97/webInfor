@@ -24,6 +24,8 @@ Route::get('team','TeamController@index')->name('team');
 Route::get('contact','ContactController@index')->name('contact');
 Route::get('quote','QuoteController@index');
 Route::post('quoteadd','QuoteController@store')->name('quote');
+Route::get('blog','BlogController@index')->name('blog');
+Route::get('blog/{slug}','BlogController@show' )->name('blog.detail');
 Route::get('change-language/{language}', 'HomeController@changeLanguage')->name('user.change-language');
 Route::group(['middleware' => 'locale'], function() {
     Route::get('language/{language}', 'HomeController@changeLanguage')

@@ -24,13 +24,6 @@ class QuoteController extends Controller
 
     public function store(Request $request)
     {
-        $this->validate($request,[
-            'name' => 'required',
-            'email' => 'required',
-            'quote_content' => 'required',
-        ]);
-
-//        dd($request);
         $quotes = new Quote();
         $quotes->name = $request->input('name');
         $quotes->email = $request->input('email');

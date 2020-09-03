@@ -23,16 +23,16 @@
                     {{csrf_field()}}
                     <div class="form-group">
                         <!-- <label for="appointment_name" class="text-black">Full Name</label> -->
-                        <input type="text" name ="name" class="form-control" id="appointment_name" placeholder="Full Name">
+                        <input type="text" name ="name" class="form-control" id="appointment_name" placeholder="Full Name" required="true">
                     </div>
                     <div class="form-group">
                         <!-- <label for="appointment_email" class="text-black">Email</label> -->
-                        <input type="text" name="email" class="form-control" id="appointment_email" placeholder="Email">
+                        <input type="text" name="email" class="form-control" id="appointment_email" placeholder="Email" required="true">
                     </div>
 
                     <div class="form-group">
                         <!-- <label for="appointment_message" class="text-black">Message</label> -->
-                        <textarea name="quote_content" id="appointment_message" class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
+                        <textarea name="quote_content" id="appointment_message" class="form-control" cols="30" rows="10" placeholder="Message" required="true"></textarea>
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Get a Quote" id="Get_a_Quote" class="btn btn-primary"/>

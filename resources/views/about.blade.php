@@ -1,4 +1,5 @@
 @extends('layout.master')
+@section('title', 'About')
 @section('content')
     <section class="ftco-section">
         <div class="container">
