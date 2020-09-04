@@ -16,11 +16,10 @@
     <section class="ftco-section bg-light">
         <div class="container">
             <div class="row">
+                @foreach($blogs as $blog)
                 <div class="col-md-4 ftco-animate">
-                    @foreach($blogs as $blog)
                     <div class="blog-entry">
-                        <a href="{{route('blog.detail',$blog->slug)}}" class="block-20" style="background-image: url({{Voyager::image( $blog->image )}});">
-                        </a>
+                        <a href="{{route('blog.detail',$blog->slug)}}" class="block-20 img img-responsive" style="background-image: url({{Voyager::image($blog->image)}});"></a>
                         <div class="text p-4 d-block">
                             <div class="meta mb-3">
                                 <div><a href="#">August 12, 2018</a></div>
@@ -30,9 +29,9 @@
                             <p>{{$blog->excerpt}}</p>
                         </div>
                     </div>
-                    @endforeach
-                        {{ $blogs->links()}}
                 </div>
+                @endforeach
+                {{ $blogs->links()}}
             </div>
         </div>
     </section>
