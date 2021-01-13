@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3de9e3-bbc6-471f-a990-23029ed1b561" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +142,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/public/images/vietnam.svg" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -197,7 +199,18 @@
       <workItem from="1599111666664" duration="1827000" />
       <workItem from="1599186150710" duration="1738000" />
       <workItem from="1599187905780" duration="1404000" />
-      <workItem from="1599445044671" duration="995000" />
+      <workItem from="1599445044671" duration="1275000" />
+      <workItem from="1599555066859" duration="233000" />
+      <workItem from="1599555340189" duration="599000" />
+      <workItem from="1601434012476" duration="40000" />
+      <workItem from="1603697260451" duration="712000" />
+      <workItem from="1603699101555" duration="5000" />
+      <workItem from="1604991641075" duration="1524000" />
+      <workItem from="1604993417968" duration="1359000" />
+      <workItem from="1608109725124" duration="201000" />
+      <workItem from="1608112905085" duration="283000" />
+      <workItem from="1608201335339" duration="411000" />
+      <workItem from="1608201894002" duration="159000" />
     </task>
     <servers />
   </component>
@@ -220,46 +233,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598841254525">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1608109924720">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1598841254525" />
-    <state x="429" y="246" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595312681566">
-      <screen x="0" y="23" width="1440" height="826" />
-    </state>
-    <state x="429" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.826@0.23.1440.826" timestamp="1595312681566" />
-    <state x="550" y="61" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597301877856">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="550" y="61" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1597301877856" />
-    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599104589148">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1599104589148" />
-    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1597139796676">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1597139796676" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1599186172231">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1599186172231" />
-    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1599104414462">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1599104414462" />
-    <state x="277" y="77" key="SettingsEditor" timestamp="1597112289936">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1597112289936" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1597120859997">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1597120859997" />
-    <state x="427" y="210" width="837" height="550" key="find.popup" timestamp="1595325636094">
-      <screen x="0" y="23" width="1440" height="826" />
-    </state>
-    <state x="427" y="210" width="837" height="550" key="find.popup/0.23.1440.826@0.23.1440.826" timestamp="1595325636094" />
-    <state x="569" y="251" width="782" height="550" key="find.popup/0.23.1920.1006@0.23.1920.1006" timestamp="1595238109020" />
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1608109924720" />
   </component>
 </project>
