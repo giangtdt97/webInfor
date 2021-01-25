@@ -32,6 +32,13 @@ Route::group(['middleware' => 'locale'], function() {
     Route::get('language/{language}', 'HomeController@changeLanguage')
         ->name('language');
 });
+//Route::group(['prefix' => 'admin'], function () {
+//    Voyager::routes();
+//});
+if (App::environment('production', 'staging')) {
+    URL::forceScheme('https');
+}
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
