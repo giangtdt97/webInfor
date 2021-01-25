@@ -21,7 +21,7 @@ Route::get('','HomeController@index')->name('home');
 
 Route::get('about','AboutController@index')->name('about');
 Route::get('services','ServicesController@index')->name('services');
-Route::get('team','TeamController@index')->name('team');
+Route::get('team','HumanResourceController@index')->name('team');
 Route::get('contact','ContactController@index')->name('contact');
 Route::get('quote','QuoteController@index');
 Route::post('quoteadd','QuoteController@store')->name('quote');

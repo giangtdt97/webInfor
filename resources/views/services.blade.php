@@ -48,47 +48,17 @@
                             <h2 class="mb-2">{{trans('services.technologies')}}</h2>
                             <span class="subheading">{{trans('services.introduce02')}}</span>
                         </div>
-                        <div class="list-services d-flex ftco-animate">
-                            <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="icon-pencil"></span>
+                        @foreach($teches as $tech)
+                            <div class="list-services d-flex ftco-animate">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <span class="{{$tech->icon}}"></span>
+                                </div>
+                                <div class="text">
+                                    <h3>{{$tech->title}}</h3>
+                                    {!!$tech->content!!}
+                                </div>
                             </div>
-                            <div class="text">
-                                <h3>Back End Development</h3>
-                                <p>PHP, Laravel framework, Symfony framework</p>
-                                <p>ASP.NET/C#, Web form</p>
-                                <p>RESTful API, Facebook API, Twitter API, Zalo API, AWS</p>
-                            </div>
-                        </div>
-                        <div class="list-services d-flex ftco-animate">
-                            <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="icon-web"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Front End Development</h3>
-                                <p>React Native, Android Native, Swift(IOS)</p>
-                                <p>JavaScript, jQuery, Ajax, Vue.Js, Angular...</p>
-                                <p>Bootstrap 3,4; HTML5, CSS3, SCSS, SASS...</p>
-                            </div>
-                        </div>
-                        <div class="list-services d-flex ftco-animate">
-                            <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="icon-clipboard"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Database</h3>
-                                <p>MySQL, SQL Server, PostreSQL, SQLite</p>
-                                <p>MongoDB</p>
-                            </div>
-                        </div>
-                        <div class="list-services d-flex ftco-animate">
-                            <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="icon-pie-chart"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Other Teach</h3>
-                                <p>Amazon Web Services, IIS Windows Server, Nginx, Linux, WAMP, LAMP, MEAN stack, Git/Git-Flow...</p>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

@@ -2,19 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\HumanResource;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        return view(
-            'about');
+        $humanResources=HumanResource::all();
+        return view('about',['humanResources'=>$humanResources]);
     }
 
     /**

@@ -95,47 +95,17 @@
                             <h2 class="mb-2">{{trans('services.technologies')}}</h2>
                             <span class="subheading">{{trans('services.introduce02')}}</span>
                         </div>
+                        @foreach($teches as $tech)
                         <div class="list-services d-flex ftco-animate">
                             <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="icon-pencil"></span>
+                                <span class="{{$tech->icon}}"></span>
                             </div>
                             <div class="text">
-                                <h3>Back End Development</h3>
-                                <p>PHP, Laravel framework, Symfony framework</p>
-                                <p>ASP.NET/C#, Web form</p>
-                                <p>RESTful API, Facebook API, Twitter API, Zalo API, AWS</p>
+                                <h3>{{$tech->title}}</h3>
+                                {!!$tech->content!!}
                             </div>
                         </div>
-                        <div class="list-services d-flex ftco-animate">
-                            <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="icon-web"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Front End Development</h3>
-                                <p>React Native, Android Native, Swift(IOS)</p>
-                                <p>JavaScript, jQuery, Ajax, Vue.Js, Angular...</p>
-                                <p>Bootstrap 3,4; HTML5, CSS3, SCSS, SASS...</p>
-                            </div>
-                        </div>
-                        <div class="list-services d-flex ftco-animate">
-                            <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="icon-clipboard"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Database</h3>
-                                <p>MySQL, SQL Server, PostreSQL, SQLite</p>
-                                <p>MongoDB</p>
-                            </div>
-                        </div>
-                        <div class="list-services d-flex ftco-animate">
-                            <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="icon-pie-chart"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Other Teach</h3>
-                                <p>Amazon Web Services, IIS Windows Server, Nginx, Linux, WAMP, LAMP, MEAN stack, Git/Git-Flow...</p>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -164,74 +134,77 @@
             <div class="row justify-content-center ftco-animate">
                 <div class="col-md-8">
                     <div class="carousel-testimony owl-carousel ftco-owl">
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/vuong-phan.jpg')}})">
+                        @foreach($humanResources as $humanResource)
+                            <div class="item">
+                                <div class="testimony-wrap p-4 pb-5">
+                                    <div class="user-img mb-5" style="background-image: url({{Voyager::image( $humanResource->avatar )}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="">Engineering Manager of BOSCH Vietnam (2018 – Present).</p>
-                                    <p class="name">Vuong Phan</p>
-                                    <span class="position">Senior Advisor</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/hai-van.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p>With over 8 years of experience on many international projects. He is an expert in back-end and database structure.</p>
-                                    <p class="name">Hai Van</p>
-                                    <span class="position">Senior Software Developer</span>
+                                    </div>
+                                    <div class="text text-center">
+                                        <p class="">{{$humanResource->description}}</p>
+                                        <p class="name">{{$humanResource->name}}</p>
+                                        <span class="position">{{$humanResource->position}}</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/tin-tran.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="">Directing software development projects. Producing, testing and debugging code and Leading developers</p>
-                                    <p class="name">Tin Tran</p>
-                                    <span class="position">Senior Software Developer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/duyen-nguyen.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="name">Duyen Nguyen</p>
-                                    <span class="position">Director of Business Analyst (BA)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/trung-tran.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="name">Trung Tran</p>
-                                    <span class="position">Director of Business Development</span>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
+
+{{--                        <div class="item">--}}
+{{--                            <div class="testimony-wrap p-4 pb-5">--}}
+{{--                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/hai-van.jpg')}})">--}}
+{{--                    <span class="quote d-flex align-items-center justify-content-center">--}}
+{{--                      <i class="icon-quote-left"></i>--}}
+{{--                    </span>--}}
+{{--                                </div>--}}
+{{--                                <div class="text text-center">--}}
+{{--                                    <p>With over 8 years of experience on many international projects. He is an expert in back-end and database structure.</p>--}}
+{{--                                    <p class="name">Hai Van</p>--}}
+{{--                                    <span class="position">Senior Software Developer</span>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="item">--}}
+{{--                            <div class="testimony-wrap p-4 pb-5">--}}
+{{--                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/tin-tran.jpg')}})">--}}
+{{--                    <span class="quote d-flex align-items-center justify-content-center">--}}
+{{--                      <i class="icon-quote-left"></i>--}}
+{{--                    </span>--}}
+{{--                                </div>--}}
+{{--                                <div class="text text-center">--}}
+{{--                                    <p class="">Directing software development projects. Producing, testing and debugging code and Leading developers</p>--}}
+{{--                                    <p class="name">Tin Tran</p>--}}
+{{--                                    <span class="position">Senior Software Developer</span>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="item">--}}
+{{--                            <div class="testimony-wrap p-4 pb-5">--}}
+{{--                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/duyen-nguyen.jpg')}})">--}}
+{{--                    <span class="quote d-flex align-items-center justify-content-center">--}}
+{{--                      <i class="icon-quote-left"></i>--}}
+{{--                    </span>--}}
+{{--                                </div>--}}
+{{--                                <div class="text text-center">--}}
+{{--                                    <p class="name">Duyen Nguyen</p>--}}
+{{--                                    <span class="position">Director of Business Analyst (BA)</span>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="item">--}}
+{{--                            <div class="testimony-wrap p-4 pb-5">--}}
+{{--                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/trung-tran.jpg')}})">--}}
+{{--                    <span class="quote d-flex align-items-center justify-content-center">--}}
+{{--                      <i class="icon-quote-left"></i>--}}
+{{--                    </span>--}}
+{{--                                </div>--}}
+{{--                                <div class="text text-center">--}}
+{{--                                    <p class="name">Trung Tran</p>--}}
+{{--                                    <span class="position">Director of Business Development</span>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>

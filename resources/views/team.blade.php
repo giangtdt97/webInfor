@@ -21,64 +21,78 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
-                    <div class="staff">
-                        <div class="img mb-4" style="background-image: url({{asset('images/persons/vuong-phan.jpg')}});"></div>
-                        <div class="info text-center">
-                            <h3><a href="teacher-single.html">Vuong Phan</a></h3>
-                            <span class="position">Senior Advisor</span>
-                            <div class="text">
-                                <p>Engineering Manager of BOSCH Vietnam (2018 – Present).</p>
+                @foreach($humanResources as $humanResource)
+                    <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
+                        <div class="staff">
+                            <div class="img mb-4" style="background-image: url({{Voyager::image( $humanResource->avatar )}});"></div>
+                            <div class="info text-center">
+                                <h3><a href="#">{{$humanResource->name}}</a></h3>
+                                <span class="position">{{$humanResource->position}}</span>
+                                <div class="text">
+                                    <p>{{$humanResource->description}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
-                    <div class="staff">
-                        <div class="img mb-4" style="background-image: url({{asset('images/persons/hai-van.jpg')}});"></div>
-                        <div class="info text-center">
-                            <h3><a href="teacher-single.html">Hai Van</a></h3>
-                            <span class="position">Senior Software Developer</span>
-                            <div class="text">
-                                <p>With over 8 years of experience on many international projects. He is an expert in back-end and database structure.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
-                    <div class="staff">
-                        <div class="img mb-4" style="background-image: url({{asset('images/persons/tin-tran.jpg')}});"></div>
-                        <div class="info text-center">
-                            <h3><a href="teacher-single.html">Tin Tran</a></h3>
-                            <span class="position">Senior Software Developer</span>
-                            <div class="text">
-                                <p>Directing software development projects. Producing, testing and debugging code and Leading developers</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
-                    <div class="staff">
-                        <div class="img mb-4" style="background-image: url({{asset('images/persons/duyen-nguyen.jpg')}});"></div>
-                        <div class="info text-center">
-                            <h3><a href="teacher-single.html">Duyen Nguyen</a></h3>
-                            <span class="position">Business Analyst Manager</span>
-                            <div class="text">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
-                    <div class="staff">
-                        <div class="img mb-4" style="background-image: url({{asset('images/persons/trung-tran.jpg')}});"></div>
-                        <div class="info text-center">
-                            <h3><a href="teacher-single.html">Trung Tran</a></h3>
-                            <span class="position">Human Resource Manager</span>
-                            <div class="text">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+{{--                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">--}}
+{{--                    <div class="staff">--}}
+{{--                        <div class="img mb-4" style="background-image: url({{asset('images/persons/vuong-phan.jpg')}});"></div>--}}
+{{--                        <div class="info text-center">--}}
+{{--                            <h3><a href="teacher-single.html">Vuong Phan</a></h3>--}}
+{{--                            <span class="position">Senior Advisor</span>--}}
+{{--                            <div class="text">--}}
+{{--                                <p>Engineering Manager of BOSCH Vietnam (2018 – Present).</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">--}}
+{{--                    <div class="staff">--}}
+{{--                        <div class="img mb-4" style="background-image: url({{asset('images/persons/hai-van.jpg')}});"></div>--}}
+{{--                        <div class="info text-center">--}}
+{{--                            <h3><a href="teacher-single.html">Hai Van</a></h3>--}}
+{{--                            <span class="position">Senior Software Developer</span>--}}
+{{--                            <div class="text">--}}
+{{--                                <p>With over 8 years of experience on many international projects. He is an expert in back-end and database structure.</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">--}}
+{{--                    <div class="staff">--}}
+{{--                        <div class="img mb-4" style="background-image: url({{asset('images/persons/tin-tran.jpg')}});"></div>--}}
+{{--                        <div class="info text-center">--}}
+{{--                            <h3><a href="teacher-single.html">Tin Tran</a></h3>--}}
+{{--                            <span class="position">Senior Software Developer</span>--}}
+{{--                            <div class="text">--}}
+{{--                                <p>Directing software development projects. Producing, testing and debugging code and Leading developers</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">--}}
+{{--                    <div class="staff">--}}
+{{--                        <div class="img mb-4" style="background-image: url({{asset('images/persons/duyen-nguyen.jpg')}});"></div>--}}
+{{--                        <div class="info text-center">--}}
+{{--                            <h3><a href="teacher-single.html">Duyen Nguyen</a></h3>--}}
+{{--                            <span class="position">Business Analyst Manager</span>--}}
+{{--                            <div class="text">--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">--}}
+{{--                    <div class="staff">--}}
+{{--                        <div class="img mb-4" style="background-image: url({{asset('images/persons/trung-tran.jpg')}});"></div>--}}
+{{--                        <div class="info text-center">--}}
+{{--                            <h3><a href="teacher-single.html">Trung Tran</a></h3>--}}
+{{--                            <span class="position">Human Resource Manager</span>--}}
+{{--                            <div class="text">--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
             <div class="row  mt-5 justify-conten-center">
                 <div class="col-md-8 ftco-animate">

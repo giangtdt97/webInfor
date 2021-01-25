@@ -63,74 +63,22 @@
             <div class="row justify-content-center ftco-animate">
                 <div class="col-md-8">
                     <div class="carousel-testimony owl-carousel ftco-owl">
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/vuong-phan.jpg')}})">
+                        @foreach($humanResources as $humanResource)
+                            <div class="item">
+                                <div class="testimony-wrap p-4 pb-5">
+                                    <div class="user-img mb-5" style="background-image: url({{Voyager::image( $humanResource->avatar )}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="">Engineering Manager of BOSCH Vietnam (2018 – Present).</p>
-                                    <p class="name">Vuong Phan</p>
-                                    <span class="position">Senior Advisor</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/hai-van.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p>With over 8 years of experience on many international projects. He is an expert in back-end and database structure.</p>
-                                    <p class="name">Hai Van</p>
-                                    <span class="position">Senior Software Developer</span>
+                                    </div>
+                                    <div class="text text-center">
+                                        <p class="">{{$humanResource->description}}</p>
+                                        <p class="name">{{$humanResource->name}}</p>
+                                        <span class="position">{{$humanResource->position}}</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/tin-tran.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="">Directing software development projects. Producing, testing and debugging code and Leading developers</p>
-                                    <p class="name">Tin Tran</p>
-                                    <span class="position">Senior Software Developer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/duyen-nguyen.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="name">Duyen Nguyen</p>
-                                    <span class="position">Director of Business Analyst (BA)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/trung-tran.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="name">Trung Tran</p>
-                                    <span class="position">Director of Business Development</span>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
