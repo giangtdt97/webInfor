@@ -68,7 +68,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h3 class="heading-white">{{trans('services.advertise03')}}</h3>
+{{--                    <h3 class="heading-white">{{trans('services.advertise03')}}</h3>--}}
+                    @if(App::isLocale('en'))
+                        <h3 class="heading-white">{{setting('site.advertise03_en')}}</h3>
+                    @else
+                        <h3 class="heading-white">{{setting('site.advertise03_vi')}}</h3>
+                    @endif
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
     <section class="ftco-section">
         <div class="container">
             <div class="row d-md-flex">
-                <div class="col-md-6 ftco-animate img about-image" style="background-image: url({{asset('images/coding/team-work.jpg')}});">
+                <div class="col-md-6 ftco-animate img about-image" style="background-image: url({{Voyager::image($feature_images[1]->image)}});">
                 </div>
                 <div class="col-md-6 ftco-animate p-md-5">
                     <div class="row">
@@ -38,9 +38,7 @@
 
                                 <div class="tab-pane fade" id="v-pills-goal" role="tabpanel" aria-labelledby="v-pills-goal-tab">
                                     <div>
-                                        <p>
-                                            {{trans('services.Goal')}}
-                                        </p>
+                                        <p>{{trans('services.Goal')}}</p>
                                     </div>
                                 </div>
                             </div>

@@ -40,7 +40,7 @@
         </div>
         <div class="container-wrap mt-5">
             <div class="row d-flex no-gutters">
-                <div class="col-md-6 img ftco-animate" style="background-image: url({{asset('images/programer.jpg')}});">
+                <div class="col-md-6 img ftco-animate" style="background-image: url({{Voyager::image($feature_images[0]->image)}});">
                 </div>
                 <div class="col-md-6 d-flex">
                     <div class="services-wrap">
@@ -69,7 +69,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h3 class="heading-white">{{trans('services.advertise03')}}</h3>
+{{--                    <h3 class="heading-white">{{trans('services.advertise03')}}</h3>--}}
+                    @if(App::isLocale('en'))
+                        <h3 class="heading-white">{{setting('site.advertise03_en')}}</h3>
+                    @else
+                        <h3 class="heading-white">{{setting('site.advertise03_vi')}}</h3>
+                    @endif
                 </div>
             </div>
         </div>

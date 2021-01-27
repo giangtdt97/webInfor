@@ -8,13 +8,18 @@
             <div class="col-md-3">
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Banaba Tech.</h2>
-                    <p>{{trans('services.introduce01')}}{{trans('services.introduce02')}}</p>
+                    @if(App::isLocale('en'))
+                        <p>{{setting('site.introduction_en')}}</p>
+                    @else
+                        <p>{{setting('site.introduction_vi')}}</p>
+                    @endif
+
                 </div>
-                <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
-                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
+{{--                <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">--}}
+{{--                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>--}}
+{{--                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--}}
+{{--                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--}}
+{{--                </ul>--}}
             </div>
             <div class="col-md-2">
                 <div class="ftco-footer-widget mb-4 ml-md-5">
