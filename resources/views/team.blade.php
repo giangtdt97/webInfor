@@ -29,7 +29,7 @@
                                 <h3><a href="#">{{$humanResource->name}}</a></h3>
                                 <span class="position">{{$humanResource->position}}</span>
                                 <div class="text">
-                                    <p>{{$humanResource->description}}</p>
+                                    <p>{!!$humanResource->description!!}</p>
                                 </div>
                             </div>
                         </div>
