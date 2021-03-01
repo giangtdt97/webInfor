@@ -19,11 +19,11 @@
                 @foreach($blogs ?? '' as $blog)
                 <div class="col-md-4 ftco-animate">
                     <div class="blog-entry">
-                        <a href="{{route('blog.detail',$blog->slug)}}" class="block-20 " ><img src="{{Voyager::image( $blog->image )}}"class="img img-responsive"></a>
+                        <a href="{{route('blog.detail',$blog->slug)}}" class="block-20 " ><img src="{{Voyager::image($blog->image,'cropped')}}"class="img img-responsive"></a>
                         <div class="text p-4 d-block">
                             <div class="meta mb-3">
-                                <div><a href="#">August 12, 2018</a></div>
-                                <div><a href="#">Admin</a></div>
+                                <div><a href="javascript:void(0)"><span>{{$blog->created_at->format('d')}}/</span>{{$blog->created_at->format('m')}}/<span>{{$blog->created_at->format('y')}}</span></a></div>
+                                <div><a href="javascript:void(0)">Admin</a></div>
                             </div>
                             <h3 class="heading"><a href="{{route('blog.detail',$blog->slug)}}">{{$blog->title}}</a></h3>
                             <p>{{$blog->excerpt}}</p>
@@ -35,24 +35,17 @@
             </div>
         </div>
     </section>
-    <section class="ftco-section-parallax">
-        <div class="parallax-img d-flex align-items-center">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                        <h2>Subcribe to our Newsletter</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-                        <div class="row d-flex justify-content-center mt-5">
-                            <div class="col-md-8">
-                                <form action="#" class="subscribe-form">
-                                    <div class="form-group d-flex">
-                                        <input type="text" class="form-control" placeholder="Enter email address">
-                                        <input type="submit" value="Subscribe" class="submit px-3">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+    <section class="ftco-section ftco-section-2">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    {{--                    <h3 class="heading-white">{{trans('services.advertise03')}}</h3>--}}
+                    @if(App::isLocale('en'))
+                        <h3 class="heading-white">{{setting('site.advertise03_en')}}</h3>
+                    @else
+                        <h3 class="heading-white">{{setting('site.advertise03_vi')}}</h3>
+                    @endif
                 </div>
             </div>
         </div>

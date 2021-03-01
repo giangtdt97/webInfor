@@ -5,7 +5,7 @@ return[
     'services'=>'services',
     'team'=>'team',
     'contact'=>'contact',
-    'get a quote'=>'get a quote'
+    'get a quote'=>'Quotation'
 ]
 ?>
 

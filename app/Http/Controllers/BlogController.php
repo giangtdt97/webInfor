@@ -15,11 +15,12 @@ class BlogController extends Controller
     }
     public function show($slug)
     {
+        $blogs = Blog::orderBy('created_at', 'desc')->published()->paginate(3);
         $blog = Blog::where('slug', $slug)->first();
         // dd($blog);
         return view(
             'blog-single',
-            ['blog' => $blog]
+            ['blogs' => $blogs,'blog' => $blog]
         );
     }
 }

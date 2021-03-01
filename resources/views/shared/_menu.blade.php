@@ -13,7 +13,7 @@
                 <!--	          <li class="nav-item"><a class="nav-link" href="">Work</a></li>-->
                 <li class="nav-item {{ (request()->is('team')) ? 'active' : '' }}"><a href="{{route('team')}}" class="nav-link">{{trans('menu.team')}}</a></li>
                 <!--	          <li class="nav-item"><a href="pricing" class="nav-link">Pricing</a></li>-->
-{{--                <li class="nav-item {{ (request()->is('blog')) ? 'active' : '' }}"><a href="{{route('blog')}}" class="nav-link">Blog</a></li>--}}
+                <li class="nav-item {{ (request()->is('blog')) ? 'active' : '' }}"><a href="{{route('blog')}}" class="nav-link">Blog</a></li>
                 <li class="nav-item {{ (request()->is('contact')) ? 'active' : '' }}"><a href="{{route('contact')}}" class="nav-link">{{trans('menu.contact')}}</a></li>
                 <li class="nav-item cta"><a href="" class="nav-link" data-toggle="modal" data-target="#modalRequest"><span>{{trans('menu.get a quote')}}</span></a></li>
             </ul>

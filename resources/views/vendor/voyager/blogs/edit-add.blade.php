@@ -237,6 +237,7 @@
                     <div class="panel-footer">
                         @section('submit-buttons')
                             <button type="submit" class="btn btn-primary save">{{ __('voyager::generic.save') }}</button>
+                            <a  href="{{ url()->previous() }}" type="button" class="btn btn-danger save">Cancel</a>
                         @stop
                         @yield('submit-buttons')
                     </div>
