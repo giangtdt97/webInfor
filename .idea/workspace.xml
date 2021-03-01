@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3de9e3-bbc6-471f-a990-23029ed1b561" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/team.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/team.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +140,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PhpProject" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/public/images/vietnam.svg" />
@@ -244,7 +243,7 @@
       <workItem from="1614569222960" duration="866000" />
       <workItem from="1614570111346" duration="1797000" />
       <workItem from="1614571925049" duration="1792000" />
-      <workItem from="1614573731301" duration="977000" />
+      <workItem from="1614573731301" duration="1639000" />
     </task>
     <servers />
   </component>

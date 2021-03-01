@@ -143,7 +143,7 @@
                     </span>
                                     </div>
                                     <div class="text text-center">
-                                        <p class="">{{$humanResource->description}}</p>
+                                        <p class="">{!!$humanResource->description!!}</p>
                                         <p class="name">{{$humanResource->name}}</p>
                                         <span class="position">{{$humanResource->position}}</span>
                                     </div>
