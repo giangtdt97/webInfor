@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\About;
 use App\FeatureImage;
 use App\HumanResource;
 use Illuminate\Http\Request;
@@ -11,9 +12,10 @@ class AboutController extends Controller
 
     public function index()
     {
+        $about=About::all();
         $humanResources=HumanResource::all();
         $feature_images=FeatureImage::all();
-        return view('about',['humanResources'=>$humanResources,'feature_images'=>$feature_images]);
+        return view('about',['humanResources'=>$humanResources,'feature_images'=>$feature_images,'about'=>$about]);
     }
 
     /**

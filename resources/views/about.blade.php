@@ -23,22 +23,27 @@
 
                                 <div class="tab-pane show active" id="v-pills-whatwedo" role="tabpanel" aria-labelledby="v-pills-whatwedo-tab">
                                     <div>
-                                        <h2 class="mb-4">{{trans('services.Offer')}}</h2>
-                                        <p>{{trans('services.content1')}}</p>
-                                        <p>{{trans('services.content2')}}</p>
-                                        <p>{{trans('services.content3')}}</p>
+
+                                        @if(App::isLocale('en')){!!$about[0]->content!!}</h3>
+                                        @else{!!$about[0]->content_vi!!}
+                                        @endif
+
                                     </div>
                                 </div>
 
                                 <div class="tab-pane fade" id="v-pills-mission" role="tabpanel" aria-labelledby="v-pills-mission-tab">
                                     <div>
-                                        <p>{{trans('services.Mission')}}</p>
+                                        @if(App::isLocale('en')){!!$about[1]->content!!}</h3>
+                                        @else{!!$about[1]->content_vi!!}
+                                        @endif
                                     </div>
                                 </div>
 
                                 <div class="tab-pane fade" id="v-pills-goal" role="tabpanel" aria-labelledby="v-pills-goal-tab">
                                     <div>
-                                        <p>{{trans('services.Goal')}}</p>
+                                        @if(App::isLocale('en')){!!$about[2]->content!!}</h3>
+                                        @else{!!$about[2]->content_vi!!}
+                                        @endif
                                     </div>
                                 </div>
                             </div>
