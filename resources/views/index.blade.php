@@ -14,7 +14,7 @@
                     </h1>
                     <p class="" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{trans('services.advertise01')}}</p>
                     <!--            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#" class="btn btn-primary px-4 py-3">Get a Quote</a> <a href="#" class="btn btn-primary btn-outline-primary px-4 py-3">Our Portfolio</a></p>-->
-                    <img src="{{asset('images/logo-white.png')}}" alt="#" style="width: 250px">
+                    <img src="{{asset('images/logo-white-min.png')}}" alt="#" style="width: 250px">
 
                 </div>
                 <div class="one-half align-self-md-end align-self-sm-center" style="margin-top:auto;">
@@ -23,10 +23,10 @@
                             <img src="public/images/dashboard_full_1.png" class="img-fluid img"alt="">
                         </div>-->
                         <div class="item">
-                            <img src="{{asset('images/dashboard_full_2.png')}}" class="img-fluid img"alt="">
+                            <img src="{{asset('images/dashboard_full_2-min.png')}}" class="img-fluid img"alt="">
                         </div>
                         <div class="item">
-                            <img src="{{asset('images/dashboard_full_3.png')}}" class="img-fluid img"alt="">
+                            <img src="{{asset('images/dashboard_full_3-min.png')}}" class="img-fluid img"alt="">
                         </div>
                     </div>
                 </div>
@@ -150,61 +150,6 @@
                                 </div>
                             </div>
                         @endforeach
-
-{{--                        <div class="item">--}}
-{{--                            <div class="testimony-wrap p-4 pb-5">--}}
-{{--                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/hai-van.jpg')}})">--}}
-{{--                    <span class="quote d-flex align-items-center justify-content-center">--}}
-{{--                      <i class="icon-quote-left"></i>--}}
-{{--                    </span>--}}
-{{--                                </div>--}}
-{{--                                <div class="text text-center">--}}
-{{--                                    <p>With over 8 years of experience on many international projects. He is an expert in back-end and database structure.</p>--}}
-{{--                                    <p class="name">Hai Van</p>--}}
-{{--                                    <span class="position">Senior Software Developer</span>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="item">--}}
-{{--                            <div class="testimony-wrap p-4 pb-5">--}}
-{{--                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/tin-tran.jpg')}})">--}}
-{{--                    <span class="quote d-flex align-items-center justify-content-center">--}}
-{{--                      <i class="icon-quote-left"></i>--}}
-{{--                    </span>--}}
-{{--                                </div>--}}
-{{--                                <div class="text text-center">--}}
-{{--                                    <p class="">Directing software development projects. Producing, testing and debugging code and Leading developers</p>--}}
-{{--                                    <p class="name">Tin Tran</p>--}}
-{{--                                    <span class="position">Senior Software Developer</span>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="item">--}}
-{{--                            <div class="testimony-wrap p-4 pb-5">--}}
-{{--                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/duyen-nguyen.jpg')}})">--}}
-{{--                    <span class="quote d-flex align-items-center justify-content-center">--}}
-{{--                      <i class="icon-quote-left"></i>--}}
-{{--                    </span>--}}
-{{--                                </div>--}}
-{{--                                <div class="text text-center">--}}
-{{--                                    <p class="name">Duyen Nguyen</p>--}}
-{{--                                    <span class="position">Director of Business Analyst (BA)</span>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="item">--}}
-{{--                            <div class="testimony-wrap p-4 pb-5">--}}
-{{--                                <div class="user-img mb-5" style="background-image: url({{asset('images/persons/trung-tran.jpg')}})">--}}
-{{--                    <span class="quote d-flex align-items-center justify-content-center">--}}
-{{--                      <i class="icon-quote-left"></i>--}}
-{{--                    </span>--}}
-{{--                                </div>--}}
-{{--                                <div class="text text-center">--}}
-{{--                                    <p class="name">Trung Tran</p>--}}
-{{--                                    <span class="position">Director of Business Development</span>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
                     </div>
                 </div>
             </div>
