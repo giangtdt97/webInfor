@@ -161,13 +161,16 @@
 
 {{--        });--}}
 {{--    });--}}
-$(document).ready(function () {
-    $(".content").hide();
-    $(".show_hide").on("click", function () {
-        var txt = $(".content").is(':visible') ? 'Read More...' : 'Read Less';
-        console.log("test")
-        $(".show_hide").text(txt);
-        $(this).prev('.content').slideToggle(200);
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    $(document).ready(function () {
+        $(".content").hide();
+        $(".show_hide").on("click", function () {
+            var txt = $(".content").is(':visible') ? 'Read More...' : 'Read Less';
+            console.log("test")
+            $(".show_hide").text(txt);
+            $(this).prev('.content').slideToggle(200);
+        });
     });
-});
+}
+
 </script>
