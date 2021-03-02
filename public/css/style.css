@@ -9159,3 +9159,31 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+@media (min-width: 0) and (max-width: 576px){
+    .readmore-box {
+        max-height: 123px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .readmore-box .read-more {
+        position: absolute;
+        top: 73px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 30px 0;
+
+        /* "transparent" only works here because == rgba(0,0,0,0) */
+        /*background-image: linear-gradient(to bottom, transparent, black);*/
+    }
+    .mobi-block{
+        display: inline!important;
+        margin: 117px;
+    }
+}
+.mobi-block{
+    display: none;
+}

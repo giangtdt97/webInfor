@@ -100,7 +100,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="{{asset('js/google-map.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
@@ -124,4 +124,50 @@
         });
     </script>
 @endif
+<script type="text/javascript" >
+{{--    $(document).ready(function() {--}}
+{{--        var $el, $ps, $up, totalHeight;--}}
 
+{{--        $(".readmore-box .button").click(function () {--}}
+{{--            console.log("test")--}}
+{{--            totalHeight = 0--}}
+
+{{--            $el = $(this);--}}
+{{--            $p = $el.parent();--}}
+{{--            $up = $p.parent();--}}
+{{--            $ps = $up.find("p:not('.read-more')");--}}
+
+{{--            // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)--}}
+{{--            $ps.each(function () {--}}
+{{--                totalHeight += $(this).outerHeight();--}}
+{{--            });--}}
+
+{{--            $up--}}
+{{--                .css({--}}
+{{--                    // Set height to prevent instant jumpdown when max height is removed--}}
+{{--                    "height": $up.height(),--}}
+{{--                    "max-height": 9999--}}
+{{--                })--}}
+{{--                .animate({--}}
+{{--                    "height": totalHeight--}}
+{{--                });--}}
+
+{{--            // fade out read-more--}}
+{{--            // $p.fadeOut();--}}
+{{--            $('.readmore-box .button').fadeOut();--}}
+{{--            commit();--}}
+{{--            // prevent jump-down--}}
+{{--            return false;--}}
+
+{{--        });--}}
+{{--    });--}}
+$(document).ready(function () {
+    $(".content").hide();
+    $(".show_hide").on("click", function () {
+        var txt = $(".content").is(':visible') ? 'Read More...' : 'Read Less';
+        console.log("test")
+        $(".show_hide").text(txt);
+        $(this).prev('.content').slideToggle(200);
+    });
+});
+</script>

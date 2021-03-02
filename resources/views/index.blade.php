@@ -143,10 +143,14 @@
                     </span>
                                     </div>
                                     <div class="text text-center">
-                                        <p class="">{!!$humanResource->description!!}</p>
                                         <p class="name">{{$humanResource->name}}</p>
                                         <span class="position">{{$humanResource->position}}</span>
                                     </div>
+                                    <div class="text text-center content">
+                                        <p class="">{!!$humanResource->description!!}</p>
+                                    </div>
+                                    <p class="mobi-block show_hide"><a href="javascript:void(0)" class="button" data-content="toggle-text">Read More...</a></p>
+
                                 </div>
                             </div>
                         @endforeach
